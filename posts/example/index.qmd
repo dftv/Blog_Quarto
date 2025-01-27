@@ -1,0 +1,14 @@
+---
+title: "Post example"
+
+description: "This is a post example"
+
+date: "01/01/2024"
+
+categories:
+  - example
+  - post
+---
+
+Post example
+

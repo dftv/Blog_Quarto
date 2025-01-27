@@ -1,0 +1,41 @@
+---
+title: Page Not Found
+
+listing:
+  - contents: posts
+    id: posts-list
+    type: default
+    sort: "date desc"
+    categories: false
+    fields:
+      - image
+      - title
+      - subtitle
+      - categories
+      - description
+      - date
+
+
+  - contents: articles
+    id: articles-list
+    type: default
+    sort: "date desc"
+    categories: false
+    fields:
+      - image
+      - title
+      - subtitle
+      - categories
+      - description
+      - date
+---
+
+Teste de pagina 404.
+
+## Veja também alguns posts
+::: {#posts-list}
+:::
+
+### Veja também alguns artigos
+::: {#articles-list}
+:::

@@ -1,0 +1,133 @@
+/*-- scss:defaults --*/
+
+$theme: "df_theme_dark" !default;
+
+$white: #fafafa !default;
+$gray-100: #f1f1f1 !default;
+$gray-200: #e2e2e2 !default;
+$gray-300: #d4d4d4 !default;
+$gray-400: #b9b9b9 !default;
+$gray-500: #9e9e9e !default;
+$gray-600: #808080 !default;
+$gray-700: #616161 !default;
+$gray-800: #414141 !default;
+$gray-900: #2b2b2b !default;
+$black: #151515 !default;
+
+$blue: #0d6efd !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #198754 !default;
+$teal: #20c997 !default;
+$cyan: #0dcaf0 !default;
+
+$primary: $black !default;
+$secondary: $white !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-900 !default;
+
+$favorite: #ff7f00 !default;
+
+$min-contrast-ratio: 1.28 !default;
+
+$body-bg: $black !default;
+$body-color: $white !default;
+
+$contrast-bg: color-contrast($body-bg) !default;
+$contrast-fg: color-contrast($contrast-bg) !default;
+
+$link-color: $white !default;
+
+$font-family: "Poppins" !default;
+$font-weight: 500 !default;
+$line-height: 1.1 !default;
+
+$input-btn-padding-x: 1rem !default;
+
+$pagination-hover-color: $white !default;
+$pagination-hover-bg: $primary !default;
+$pagination-hover-border-color: $primary !default;
+
+/*-- scss:rules --*/
+
+* {
+  font-family: $font-family !important;
+}
+
+$web-font-path: "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" !default;
+@if $web-font-path {
+  @import url($web-font-path);
+}
+
+.navbar {
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: $font-weight;
+  border-bottom: $white 1px solid;
+}
+
+.navbar-brand {
+  padding-top: 0.5rem;
+  font-size: inherit;
+  font-weight: $font-weight;
+  text-transform: uppercase;
+}
+
+.btn {
+  font-family: $font-family;
+  font-weight: $font-weight;
+
+  &-secondary,
+  &-warning {
+    color: $white;
+  }
+}
+
+.input-group-text {
+  background-color: $light;
+
+  color: $dark;
+}
+
+.dropdown-item {
+  &:hover {
+    background-color: $gray-900 !important;
+  }
+}
+
+.pagination {
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.listing-category {
+  font-weight: 500;
+  color: $light !important;
+}
+
+.quarto-category {
+  color: $light !important;
+
+  & a {
+    font-weight: 500;
+  }
+}
+
+.form-select {
+  background-color: $light;
+
+  color: $dark;
+}
+
+.card {
+  border-color: $gray-700;
+}

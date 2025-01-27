@@ -1,0 +1,135 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Blog Home Screen."
+  },
+  {
+    "objectID": "achievements/achievements1/index.html",
+    "href": "achievements/achievements1/index.html",
+    "title": "Achievement 1",
+    "section": "",
+    "text": "Achievement 1 - Test"
+  },
+  {
+    "objectID": "achievements/index.html",
+    "href": "achievements/index.html",
+    "title": "Achievements",
+    "section": "",
+    "text": "Listagem de todas as conquistas.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n\n\n\n\n\n\n\n\nAchievement example\n\n\n\nexample\n\n\nachievement\n\n\n\nThis is an achievement example\n\n\n\n01/01/2024\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "articles/article1/index.html",
+    "href": "articles/article1/index.html",
+    "title": "Article 1",
+    "section": "",
+    "text": "Article 1 - Test"
+  },
+  {
+    "objectID": "aboutMe/resume.html",
+    "href": "aboutMe/resume.html",
+    "title": "Daniel R. T. Filho",
+    "section": "",
+    "text": "Senior Full-Stack Engineer,\nData Scientist and Machine Learning Enthusiast\n\n\n\n\nOverview\nI am a Full-Stack Developer with extensive experience in a variety of technologies. My ability to integrate Front-End and Back-End allows me to create comprehensive and efficient solutions. With a quick learning ability and flexibility in workflow, I adapt rapidly to new technologies and project demands, ensuring the delivery of high-quality products.\n\n\n\nExperience\n\n\n\nArgus Solutions\nFull-time · 7 months\nPiracicaba, São Paulo, Brazil · Hybrid\n\nSenior Full-Stack Developer and Data Scientist\nJanuary 2025 - Present · 1 months\n\n\nSenior Full-Stack Developer\nJuly 2024 - January 2025 · 7 months\n\n\n\n\n\n\n\nPleno Full-stack Developer\n\nPleno Full-stack Developer\nJune 2024 - July 2024 · 2 months\n\n\n\n\n\n\n\nPleno Mobile Developer and Junior 3D Modeler\n\nPleno Mobile Developer and Junior 3D Modeler\nOctober 2022 - February 2023 · 5 months\n\n\n\n\n\n\n\nEMARTIM\nFull-time · 1 years and 10 months\nPiracicaba, São Paulo, Brazil · Remote\n\nJunior Full-stack and Mobile Developer\nDecember 2022 - March 2024 · 1 years and 4 months\n\n\nJunior Mobile Developer\nJune 2022 - December 2022 · 7 months\n\n\n\n\n\n\n\nIntern Front-End Developer\n\nIntern Front-End Developer\nFebruary 2022 - May 2022 · 4 months\n\n\n\n\n\n\n\n\n\n\n\nEducation\n\n\n\nBachelor of Engineering in Mechatronics\n\nUnicesumar,\nMay 2024 - Current\n\n\n\n\n\n\n\nAssociate Degree in Internet Systems\n\nUnicesumar,\nJuly 2022 - July 2024\n\n\n\n\n\n\n\nTechnical Degree in Systems Development\n\nPeruíbe State Technical School (ETEC),\nJanuary 2019 - December 2021\n\n\n\n\n\nAnd more: Licenses and certificates\n\n\nSee also my Skills\n\n\n\n\nMain Languages\n\n\n\nPython\nJulia\nR\nDart\nC#\nPHP\nSQL\n\n\n\n\nNoSQL\nKotlin\nJava\nJavaScript\nTypeScript\nHTML\nCSS\n\n\n\n\n\n\nSome Frameworks and Technologies\n\n\n\nFlutter\nReact\nReact Native\nExpress.js\nCodeIgniter\nFastAPI\nASP.NET\n\n\n\n\nMySQL\nMariaDB\nMongoDB\nNode.js\nShiny\nOxygen.jl\nJupyter"
+  },
+  {
+    "objectID": "posts/post1/index.html",
+    "href": "posts/post1/index.html",
+    "title": "Post 1",
+    "section": "",
+    "text": "Post 1 - Test"
+  },
+  {
+    "objectID": "posts/post2/index.html",
+    "href": "posts/post2/index.html",
+    "title": "Post 2",
+    "section": "",
+    "text": "Post 2 - Test"
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "Posts",
+    "section": "",
+    "text": "Todos os posts do blog.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nPost example\n\n\n\n\n\n\nexample\n\n\npost\n\n\n\nThis is a post example\n\n\n\n\n\n01/01/2024\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "articles/index.html",
+    "href": "articles/index.html",
+    "title": "Articles",
+    "section": "",
+    "text": "Todos os artigos do blog.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nArticle example\n\n\n\n\n\n\nexample\n\n\narticle\n\n\n\nThis is an article example\n\n\n\n\n\n01/01/2024\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "articles/article2/index.html",
+    "href": "articles/article2/index.html",
+    "title": "Article 2",
+    "section": "",
+    "text": "Article 2 - Test"
+  },
+  {
+    "objectID": "achievements/achievements2/index.html",
+    "href": "achievements/achievements2/index.html",
+    "title": "Achievement 2",
+    "section": "",
+    "text": "Achievement 2 - Test"
+  },
+  {
+    "objectID": "index.html#cores-padrão",
+    "href": "index.html#cores-padrão",
+    "title": "Home",
+    "section": "",
+    "text": "Primary\n{: .bg-primary .text-white .p-3 .rounded }\nSecondary\n{: .bg-secondary .text-white .p-3 .rounded }\nSuccess\n{: .bg-success .text-white .p-3 .rounded }\nDanger\n{: .bg-danger .text-white .p-3 .rounded }\nWarning\n{: .bg-warning .text-dark .p-3 .rounded }\nInfo\n{: .bg-info .text-white .p-3 .rounded }\nLight\n{: .bg-light .text-dark .p-3 .border .rounded }\nDark\n{: .bg-dark .text-white .p-3 .rounded }"
+  },
+  {
+    "objectID": "aboutMe/resume.html#full-stack-developer-and-data-scientist",
+    "href": "aboutMe/resume.html#full-stack-developer-and-data-scientist",
+    "title": "Resume",
+    "section": "",
+    "text": "Full-Stack Developer | Data Scientist | Artificial I"
+  },
+  {
+    "objectID": "aboutMe/resume.html#section",
+    "href": "aboutMe/resume.html#section",
+    "title": "Daniel R. T. Filho",
+    "section": "",
+    "text": "Full-Stack Developer | Data Scientist | Artificial I"
+  },
+  {
+    "objectID": "aboutMe/resume.html#experience",
+    "href": "aboutMe/resume.html#experience",
+    "title": "Daniel R. T. Filho",
+    "section": "Experience",
+    "text": "Experience\n\nTESTE\n\n\nTESTE\n\n\nTESTE"
+  },
+  {
+    "objectID": "aboutMe/resume.html#education",
+    "href": "aboutMe/resume.html#education",
+    "title": "Daniel R. T. Filho",
+    "section": "Education",
+    "text": "Education"
+  },
+  {
+    "objectID": "aboutMe/resume.html#summary",
+    "href": "aboutMe/resume.html#summary",
+    "title": "Daniel R. T. Filho",
+    "section": "Summary",
+    "text": "Summary"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Listagem de todas os projetos.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n\n\n\n\n\n\n\n\nProject example\n\n\n\nexample\n\n\nproject\n\n\n\nThis is a project example\n\n\n\n01/01/2024\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/example/index.html",
+    "href": "projects/example/index.html",
+    "title": "Project example",
+    "section": "",
+    "text": "Project example"
+  }
+]

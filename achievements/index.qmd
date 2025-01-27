@@ -1,0 +1,24 @@
+---
+title: "Achievements"
+
+page-layout: full
+
+listing:
+  contents: .
+  sort: "date desc"
+  type: grid
+  categories: true
+  filter-ui: false
+  sort-ui: [date, title]
+  fields: 
+    - image
+    - title
+    - subtitle
+    - categories
+    - description
+    - date
+
+draft: false
+---
+
+Listagem de todas as conquistas.

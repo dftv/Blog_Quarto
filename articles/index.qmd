@@ -1,0 +1,24 @@
+---
+title: "Articles"
+
+page-layout: full
+
+listing:
+  contents: .
+  sort: "date desc"
+  type: default
+  categories: true
+  filter-ui: false
+  sort-ui: [date, title]
+  fields: 
+    - image
+    - date
+    - reading_time
+    - title
+    - categories
+    - description
+
+draft: false
+---
+
+Todos os artigos do blog.

@@ -1,0 +1,50 @@
+{
+  "listingMap": {
+    "index.qmd": [
+      "posts",
+      "articles"
+    ],
+    "resume.qmd": [
+      "posts",
+      "articles"
+    ],
+    "posts/index.qmd": [
+      "../posts",
+      "../articles",
+      "posts",
+      "."
+    ],
+    "articles/index.qmd": [
+      "../posts",
+      "../articles",
+      "."
+    ],
+    "achievements/index.qmd": [
+      "../posts",
+      "../articles",
+      "."
+    ],
+    "posts/posts/post-with-code/index.qmd": [
+      "../../../posts",
+      "../../../articles"
+    ],
+    "posts/posts/welcome/index.qmd": [
+      "../../../posts",
+      "../../../articles"
+    ],
+    "posts/about.qmd": [
+      "../posts",
+      "../articles"
+    ],
+    "404.qmd": [
+      "posts",
+      "articles"
+    ],
+    "posts/post1/index.qmd": [
+      "../../posts"
+    ],
+    "projects/index.qmd": [
+      "."
+    ]
+  }
+}
