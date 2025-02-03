@@ -2,42 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blog.dftv.spikeystudio.com/index.html</loc>
-    <lastmod>2025-02-03T01:36:02.139Z</lastmod>
+    <lastmod>2025-02-03T23:07:31.369Z</lastmod>
   </url>
   <url>
-    <loc>https://blog.dftv.spikeystudio.com/projects/example/index.html</loc>
-    <lastmod>2025-02-03T01:28:36.857Z</lastmod>
+    <loc>https://blog.dftv.spikeystudio.com/projects/index.html</loc>
+    <lastmod>2025-01-26T23:07:57.822Z</lastmod>
   </url>
   <url>
-    <loc>https://blog.dftv.spikeystudio.com/achievements/index.html</loc>
-    <lastmod>2025-01-26T23:27:34.493Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.dftv.spikeystudio.com/articles/index.html</loc>
-    <lastmod>2025-01-26T23:29:28.951Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.dftv.spikeystudio.com/posts/example/index.html</loc>
-    <lastmod>2025-02-03T01:29:01.717Z</lastmod>
+    <loc>https://blog.dftv.spikeystudio.com/aboutMe/resume.html</loc>
+    <lastmod>2025-02-03T22:59:09.964Z</lastmod>
   </url>
   <url>
     <loc>https://blog.dftv.spikeystudio.com/posts/index.html</loc>
     <lastmod>2025-01-26T23:07:52.812Z</lastmod>
   </url>
   <url>
-    <loc>https://blog.dftv.spikeystudio.com/aboutMe/resume.html</loc>
-    <lastmod>2025-01-26T23:45:44.664Z</lastmod>
+    <loc>https://blog.dftv.spikeystudio.com/articles/index.html</loc>
+    <lastmod>2025-01-26T23:29:28.951Z</lastmod>
   </url>
   <url>
-    <loc>https://blog.dftv.spikeystudio.com/articles/example/index.html</loc>
-    <lastmod>2025-02-03T01:30:45.189Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.dftv.spikeystudio.com/achievements/example/index.html</loc>
-    <lastmod>2025-02-03T01:30:38.364Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.dftv.spikeystudio.com/projects/index.html</loc>
-    <lastmod>2025-01-26T23:07:57.822Z</lastmod>
+    <loc>https://blog.dftv.spikeystudio.com/achievements/index.html</loc>
+    <lastmod>2025-01-26T23:27:34.493Z</lastmod>
   </url>
 </urlset>

@@ -1,6 +1,43 @@
 ---
-title: "Home"
-description: "Welcome to my blog!"
+title: "DF's Blog"
+description: "Welcome to my personal blog!"
+
+jupyter: python3
+
+listing:
+  contents:
+    - posts/*/index.qmd
+    - projects/*/index.qmd
+    - articles/*/index.qmd
+    - achievements/*/index.qmd
+  sort: "date desc"
+  feed: true
 ---
 
-Blog Home Screen.
+```{python}
+# | echo: false
+# | output: asis
+from widgets import noticeWidget
+```
+
+---
+
+## Highlights
+> This is a collection of my thoughts, projects, articles, and achievements.
+
+```{python}
+# | echo: false
+# | output: asis
+noticeWidget()
+```
+
+---
+
+## Feed
+> This is a feed of my latest posts, projects, articles, and achievements.
+
+```{python}
+# | echo: false
+# | output: asis
+noticeWidget()
+```

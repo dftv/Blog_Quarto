@@ -1,10 +1,10 @@
 [
   {
-    "listing": "/achievements/index.html",
+    "listing": "/index.html",
     "items": []
   },
   {
-    "listing": "/articles/index.html",
+    "listing": "/projects/index.html",
     "items": []
   },
   {
@@ -12,7 +12,11 @@
     "items": []
   },
   {
-    "listing": "/projects/index.html",
+    "listing": "/articles/index.html",
+    "items": []
+  },
+  {
+    "listing": "/achievements/index.html",
     "items": []
   }
 ]

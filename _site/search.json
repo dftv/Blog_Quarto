@@ -1,24 +1,31 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home",
-    "section": "",
-    "text": "Blog Home Screen."
+    "objectID": "index.html#highlights",
+    "href": "index.html#highlights",
+    "title": "DF’s Blog",
+    "section": "Highlights",
+    "text": "Highlights\n\nThis is a collection of my thoughts, projects, articles, and achievements.\n\n\n      \n        \n          \n            \n          \n          \n            Notice\n          \n        \n        \n          This blog is a work in progress. Follow me on LinkedIn for updates."
   },
   {
-    "objectID": "achievements/index.html",
-    "href": "achievements/index.html",
-    "title": "Achievements",
-    "section": "",
-    "text": "Listagem de todas as conquistas.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n\n\n\n\n\nNo matching items"
+    "objectID": "index.html#feed",
+    "href": "index.html#feed",
+    "title": "DF’s Blog",
+    "section": "Feed",
+    "text": "Feed\n\nThis is a feed of my latest posts, projects, articles, and achievements.\n\n\n      \n        \n          \n            \n          \n          \n            Notice\n          \n        \n        \n          This blog is a work in progress. Follow me on LinkedIn for updates."
   },
   {
-    "objectID": "articles/index.html",
-    "href": "articles/index.html",
-    "title": "Articles",
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
     "section": "",
-    "text": "Todos os artigos do blog.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n\n\n\n\n\nNo matching items"
+    "text": "Listagem de todas os projetos.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "aboutMe/resume.html",
+    "href": "aboutMe/resume.html",
+    "title": "Daniel R. T. Filho",
+    "section": "",
+    "text": "Senior Full-Stack Engineer,\nData Scientist and Machine Learning Enthusiast\n\n\n\n\nOverview\nI am a Full-Stack Developer with extensive experience in a variety of technologies. My ability to integrate Front-End and Back-End allows me to create comprehensive and efficient solutions. With a quick learning ability and flexibility in workflow, I adapt rapidly to new technologies and project demands, ensuring the delivery of high-quality products.\n\n\n\nExperience\n\nArgus Solutions\nFull-time · 8 months\nPiracicaba, São Paulo, Brazil · Hybrid\n\nSenior Full-Stack Developer and Data Scientist\nJanuary 2025 - Present · 2 months\n\n\nSenior Full-Stack Developer\nJuly 2024 - January 2025 · 7 months\n\n\n\nPleno Full-stack Developer\n\nPleno Full-stack Developer\nJune 2024 - July 2024 · 2 months\n\n\n\nPleno Mobile Developer and Junior 3D Modeler\n\nPleno Mobile Developer and Junior 3D Modeler\nOctober 2022 - February 2023 · 5 months\n\n\n\nEMARTIM\nFull-time · 1 years and 10 months\nPiracicaba, São Paulo, Brazil · Remote\n\nJunior Full-stack and Mobile Developer\nDecember 2022 - March 2024 · 1 years and 4 months\n\n\nJunior Mobile Developer\nJune 2022 - December 2022 · 7 months\n\n\n\nIntern Front-End Developer\n\nIntern Front-End Developer\nFebruary 2022 - May 2022 · 4 months\n\n\n\n\n\n\n\n\n\nEducation\n\nBachelor of Engineering in Mechatronics\n\nUnicesumar,\nMay 2024 - Current\n\n\n\nAssociate Degree in Internet Systems\n\nUnicesumar,\nJuly 2022 - July 2024\n\n\n\nTechnical Degree in Systems Development\n\nPeruíbe State Technical School (ETEC),\nJanuary 2019 - December 2021\n\n\n\nAnd more: Licenses and certificates\n\n\nSee also my Skills\n\n\n\n\nMain Languages\n\n\n\nPython\nJulia\nR\nDart\nC#\nPHP\nSQL\n\n\n\n\nNoSQL\nKotlin\nJava\nJavaScript\nTypeScript\nHTML\nCSS\n\n\n\n\n\n\nSome Frameworks and Technologies\n\n\n\nFlutter\nReact\nReact Native\nExpress.js\nCodeIgniter\nFastAPI\nASP.NET\n\n\n\n\nMySQL\nMariaDB\nMongoDB\nNode.js\nShiny\nOxygen.jl\nJupyter"
   },
   {
     "objectID": "posts/index.html",
@@ -28,17 +35,17 @@
     "text": "Todos os posts do blog.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "aboutMe/resume.html",
-    "href": "aboutMe/resume.html",
-    "title": "Daniel R. T. Filho",
+    "objectID": "articles/index.html",
+    "href": "articles/index.html",
+    "title": "Articles",
     "section": "",
-    "text": "Senior Full-Stack Engineer,\nData Scientist and Machine Learning Enthusiast\n\n\n\n\nOverview\nI am a Full-Stack Developer with extensive experience in a variety of technologies. My ability to integrate Front-End and Back-End allows me to create comprehensive and efficient solutions. With a quick learning ability and flexibility in workflow, I adapt rapidly to new technologies and project demands, ensuring the delivery of high-quality products.\n\n\n\nExperience\n\n\n\nArgus Solutions\nFull-time · 8 months\nPiracicaba, São Paulo, Brazil · Hybrid\n\nSenior Full-Stack Developer and Data Scientist\nJanuary 2025 - Present · 2 months\n\n\nSenior Full-Stack Developer\nJuly 2024 - January 2025 · 7 months\n\n\n\n\n\n\n\nPleno Full-stack Developer\n\nPleno Full-stack Developer\nJune 2024 - July 2024 · 2 months\n\n\n\n\n\n\n\nPleno Mobile Developer and Junior 3D Modeler\n\nPleno Mobile Developer and Junior 3D Modeler\nOctober 2022 - February 2023 · 5 months\n\n\n\n\n\n\n\nEMARTIM\nFull-time · 1 years and 10 months\nPiracicaba, São Paulo, Brazil · Remote\n\nJunior Full-stack and Mobile Developer\nDecember 2022 - March 2024 · 1 years and 4 months\n\n\nJunior Mobile Developer\nJune 2022 - December 2022 · 7 months\n\n\n\n\n\n\n\nIntern Front-End Developer\n\nIntern Front-End Developer\nFebruary 2022 - May 2022 · 4 months\n\n\n\n\n\n\n\n\n\n\n\nEducation\n\n\n\nBachelor of Engineering in Mechatronics\n\nUnicesumar,\nMay 2024 - Current\n\n\n\n\n\n\n\nAssociate Degree in Internet Systems\n\nUnicesumar,\nJuly 2022 - July 2024\n\n\n\n\n\n\n\nTechnical Degree in Systems Development\n\nPeruíbe State Technical School (ETEC),\nJanuary 2019 - December 2021\n\n\n\n\n\nAnd more: Licenses and certificates\n\n\nSee also my Skills\n\n\n\n\nMain Languages\n\n\n\nPython\nJulia\nR\nDart\nC#\nPHP\nSQL\n\n\n\n\nNoSQL\nKotlin\nJava\nJavaScript\nTypeScript\nHTML\nCSS\n\n\n\n\n\n\nSome Frameworks and Technologies\n\n\n\nFlutter\nReact\nReact Native\nExpress.js\nCodeIgniter\nFastAPI\nASP.NET\n\n\n\n\nMySQL\nMariaDB\nMongoDB\nNode.js\nShiny\nOxygen.jl\nJupyter"
+    "text": "Todos os artigos do blog.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
+    "objectID": "achievements/index.html",
+    "href": "achievements/index.html",
+    "title": "Achievements",
     "section": "",
-    "text": "Listagem de todas os projetos.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n\n\n\n\n\nNo matching items"
+    "text": "Listagem de todas as conquistas.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n\n\n\n\n\nNo matching items"
   }
 ]
