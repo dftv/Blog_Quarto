@@ -1,26 +1,18 @@
 [
   {
     "listing": "/achievements/index.html",
-    "items": [
-      "/achievements/example/index.html"
-    ]
-  },
-  {
-    "listing": "/posts/index.html",
-    "items": [
-      "/posts/example/index.html"
-    ]
+    "items": []
   },
   {
     "listing": "/articles/index.html",
-    "items": [
-      "/articles/example/index.html"
-    ]
+    "items": []
+  },
+  {
+    "listing": "/posts/index.html",
+    "items": []
   },
   {
     "listing": "/projects/index.html",
-    "items": [
-      "/projects/example/index.html"
-    ]
+    "items": []
   }
 ]

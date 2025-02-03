@@ -3,7 +3,7 @@ title: "Article example"
 
 description: "This is an article example"
 
-date: "01/01/2024"
+date: "01/01/2025"
 
 categories:
   - example
@@ -11,3 +11,22 @@ categories:
 ---
 
 Article example
+
+:::{.column-body}
+<script src="https://giscus.app/client.js"
+        data-repo="dftv/blog_quarto"
+        data-repo-id="R_kgDONv_J5g"
+        data-category="Articles"
+        data-mapping="number"
+        data-term="4"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+:::
