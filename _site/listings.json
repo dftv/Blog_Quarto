@@ -1,14 +1,6 @@
 [
   {
-    "listing": "/index.html",
-    "items": []
-  },
-  {
-    "listing": "/projects/index.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/index.html",
+    "listing": "/achievements/index.html",
     "items": []
   },
   {
@@ -16,7 +8,15 @@
     "items": []
   },
   {
-    "listing": "/achievements/index.html",
+    "listing": "/posts/index.html",
+    "items": []
+  },
+  {
+    "listing": "/index.html",
+    "items": []
+  },
+  {
+    "listing": "/projects/index.html",
     "items": []
   }
 ]

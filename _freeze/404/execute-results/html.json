@@ -1,0 +1,16 @@
+{
+  "hash": "4a08c877b6f47443cc954bf5e2ec8924",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: Error 404\ndescription: \"This page does not exist.\"\n\nlisting:\n  id: feed-list\n  contents:\n    - posts/*/index.qmd\n    - projects/*/index.qmd\n    - articles/*/index.qmd\n    - achievements/*/index.qmd\n  sort: \"date desc\"\n  feed: true\n  fields:\n      - image\n      - title\n      - subtitle\n      - categories\n      - description\n      - date\n---\n\n\n\n## Feed\n> This is a feed of my latest posts, projects, articles, and achievements.\n\n```{=html}\n\n      <div class=\"callout callout-style-default callout-caution callout-titled\">\n        <div class=\"callout-header d-flex align-content-center\">\n          <div class=\"callout-icon-container\">\n            <i class=\"callout-icon\"></i>\n          </div>\n          <div class=\"callout-title-container flex-fill\">\n            Notice\n          </div>\n        </div>\n        <div class=\"callout-body-container callout-body\">\n          <p>This blog is a work in progress. Follow me on <a href=\"https://www.linkedin.com/in/df-danielfilho/\" target=\"_blank\" data-original-href=\"https://www.linkedin.com/in/df-danielfilho/\">LinkedIn</a> for updates.</p>\n        </div>\n      </div>\n    \n```\n\n\n::: {#feed-list}\n:::\n\n",
+    "supporting": [
+      "404_files"
+    ],
+    "filters": [],
+    "includes": {
+      "include-in-header": [
+        "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js\" integrity=\"sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==\" crossorigin=\"anonymous\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js\" integrity=\"sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==\" crossorigin=\"anonymous\" data-relocate-top=\"true\"></script>\n<script type=\"application/javascript\">define('jquery', [],function() {return window.jQuery;})</script>\n"
+      ]
+    }
+  }
+}

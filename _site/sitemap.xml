@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blog.dftv.spikeystudio.com/index.html</loc>
-    <lastmod>2025-02-06T03:49:13.418Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.dftv.spikeystudio.com/projects/index.html</loc>
-    <lastmod>2025-02-06T03:46:26.498Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.dftv.spikeystudio.com/aboutMe/resume.html</loc>
-    <lastmod>2025-02-03T22:59:09.964Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.dftv.spikeystudio.com/posts/index.html</loc>
-    <lastmod>2025-02-06T03:40:15.438Z</lastmod>
+    <loc>https://blog.dftv.spikeystudio.com/achievements/index.html</loc>
+    <lastmod>2025-02-06T23:35:36.265Z</lastmod>
   </url>
   <url>
     <loc>https://blog.dftv.spikeystudio.com/articles/index.html</loc>
-    <lastmod>2025-02-06T03:47:39.628Z</lastmod>
+    <lastmod>2025-02-06T23:35:36.266Z</lastmod>
   </url>
   <url>
-    <loc>https://blog.dftv.spikeystudio.com/achievements/index.html</loc>
-    <lastmod>2025-02-06T03:42:18.679Z</lastmod>
+    <loc>https://blog.dftv.spikeystudio.com/aboutMe/resume.html</loc>
+    <lastmod>2025-02-06T23:35:36.263Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.dftv.spikeystudio.com/posts/index.html</loc>
+    <lastmod>2025-02-06T23:35:36.266Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.dftv.spikeystudio.com/index.html</loc>
+    <lastmod>2025-02-06T23:35:36.266Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.dftv.spikeystudio.com/projects/index.html</loc>
+    <lastmod>2025-02-06T23:35:36.267Z</lastmod>
   </url>
 </urlset>
