@@ -5,6 +5,7 @@ description: "Welcome to my personal blog!"
 jupyter: python3
 
 listing:
+  id: feed-list
   contents:
     - posts/*/index.qmd
     - projects/*/index.qmd
@@ -12,6 +13,13 @@ listing:
     - achievements/*/index.qmd
   sort: "date desc"
   feed: true
+  fields:
+      - image
+      - title
+      - subtitle
+      - categories
+      - description
+      - date
 ---
 
 ```{python}
@@ -21,6 +29,13 @@ from widgets import noticeWidget
 ```
 
 ---
+
+::: {.callout-tip}
+## My dilemma
+
+Be everything you can be.  
+Invent, improve and implement.
+:::
 
 ## Highlights
 > This is a collection of my thoughts, projects, articles, and achievements.
@@ -41,3 +56,6 @@ noticeWidget()
 # | output: asis
 noticeWidget()
 ```
+
+::: {#feed-list}
+:::

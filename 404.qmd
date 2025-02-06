@@ -1,27 +1,17 @@
 ---
-title: Page Not Found
+title: Error 404
+description: "This page does not exist."
 
 listing:
-  - contents: posts
-    id: posts-list
-    type: default
-    sort: "date desc"
-    categories: false
-    fields:
-      - image
-      - title
-      - subtitle
-      - categories
-      - description
-      - date
-
-
-  - contents: articles
-    id: articles-list
-    type: default
-    sort: "date desc"
-    categories: false
-    fields:
+  id: feed-list
+  contents:
+    - posts/*/index.qmd
+    - projects/*/index.qmd
+    - articles/*/index.qmd
+    - achievements/*/index.qmd
+  sort: "date desc"
+  feed: true
+  fields:
       - image
       - title
       - subtitle
@@ -30,12 +20,20 @@ listing:
       - date
 ---
 
-Teste de pagina 404.
+```{python}
+# | echo: false
+# | output: asis
+from widgets import noticeWidget
+```
 
-## Veja também alguns posts
-::: {#posts-list}
-:::
+## Feed
+> This is a feed of my latest posts, projects, articles, and achievements.
 
-### Veja também alguns artigos
-::: {#articles-list}
+```{python}
+# | echo: false
+# | output: asis
+noticeWidget()
+```
+
+::: {#feed-list}
 :::

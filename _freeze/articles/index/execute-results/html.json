@@ -1,0 +1,16 @@
+{
+  "hash": "d7eeeae8c7148df4bab5b0cab553a24b",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Articles\"\ndescription: \"In-depth analyses and reflections on specific topics, providing detailed insights and perspectives.\"\n\npage-layout: full\n\nlisting:\n  id: articles-list\n  contents: .\n  sort: \"date desc\"\n  type: default\n  categories: true\n  filter-ui: false\n  sort-ui: [date, title]\n  fields: \n    - image\n    - date\n    - reading_time\n    - title\n    - categories\n    - description\n\ndraft: false\n---\n\n\n\n```{=html}\n\n      <div class=\"callout callout-style-default callout-caution callout-titled\">\n        <div class=\"callout-header d-flex align-content-center\">\n          <div class=\"callout-icon-container\">\n            <i class=\"callout-icon\"></i>\n          </div>\n          <div class=\"callout-title-container flex-fill\">\n            Notice\n          </div>\n        </div>\n        <div class=\"callout-body-container callout-body\">\n          <p>This blog is a work in progress. Follow me on <a href=\"https://www.linkedin.com/in/df-danielfilho/\" target=\"_blank\" data-original-href=\"https://www.linkedin.com/in/df-danielfilho/\">LinkedIn</a> for updates.</p>\n        </div>\n      </div>\n    \n```\n\n\n::: {#articles-list}\n:::\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {
+      "include-in-header": [
+        "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js\" integrity=\"sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==\" crossorigin=\"anonymous\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js\" integrity=\"sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==\" crossorigin=\"anonymous\" data-relocate-top=\"true\"></script>\n<script type=\"application/javascript\">define('jquery', [],function() {return window.jQuery;})</script>\n"
+      ]
+    }
+  }
+}
