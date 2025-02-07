@@ -56,6 +56,9 @@ format:
     
     toc: false
 
+resources:
+  - CNAME
+
 execute: 
   freeze: auto
 
