@@ -10,6 +10,30 @@
 <atom:link href="https://blog.dftv.spikeystudio.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Welcome to my personal blog!</description>
 <generator>quarto-1.6.40</generator>
-<lastBuildDate>Thu, 06 Feb 2025 23:56:03 GMT</lastBuildDate>
+<lastBuildDate>Fri, 07 Feb 2025 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>Step by step guide on how to ruin your company and your team with AI</title>
+  <link>https://blog.dftv.spikeystudio.com/posts/step_by_step_guide_on_how_to_ruin_your_company_and_your_team_with_ai/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Post example</p>
+<div class="column-body">
+<script src="https://giscus.app/client.js" data-repo="dftv/blog_quarto" data-repo-id="R_kgDONv_J5g" data-category="Posts" data-mapping="number" data-term="8" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
+</script>
+</div>
+
+
+
+ ]]></description>
+  <category>Behavioral Analysis</category>
+  <category>Artificial Intelligence</category>
+  <category>Ethics</category>
+  <category>Management</category>
+  <guid>https://blog.dftv.spikeystudio.com/posts/step_by_step_guide_on_how_to_ruin_your_company_and_your_team_with_ai/</guid>
+  <pubDate>Fri, 07 Feb 2025 03:00:00 GMT</pubDate>
+</item>
 </channel>
 </rss>

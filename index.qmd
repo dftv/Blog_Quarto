@@ -51,11 +51,5 @@ noticeWidget()
 ## Feed
 > This is a feed of my latest posts, projects, articles, and achievements.
 
-```{python}
-# | echo: false
-# | output: asis
-noticeWidget()
-```
-
 ::: {#feed-list}
 :::

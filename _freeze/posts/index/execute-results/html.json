@@ -1,10 +1,10 @@
 {
-  "hash": "5add7827ea4666e87a95e6c23baa8dca",
+  "hash": "f331713f6f90a7481630fb7d87fee50e",
   "result": {
     "engine": "jupyter",
     "markdown": "---\ntitle: \"Posts\"\ndescription: \"Reviews, tutorials, and analyses on various topics like books and technology.\"\n\npage-layout: full\n\nlisting:\n  id: posts-list\n  contents: .\n  sort: \"date desc\"\n  type: default\n  categories: true\n  filter-ui: false\n  sort-ui: [date, title]\n  fields:\n    - image\n    - date\n    - reading_time\n    - title\n    - categories\n    - description\n\ndraft: false\n---\n\n\n\n```{=html}\n\n      <div class=\"callout callout-style-default callout-caution callout-titled\">\n        <div class=\"callout-header d-flex align-content-center\">\n          <div class=\"callout-icon-container\">\n            <i class=\"callout-icon\"></i>\n          </div>\n          <div class=\"callout-title-container flex-fill\">\n            Notice\n          </div>\n        </div>\n        <div class=\"callout-body-container callout-body\">\n          <p>This blog is a work in progress. Follow me on <a href=\"https://www.linkedin.com/in/df-danielfilho/\" target=\"_blank\" data-original-href=\"https://www.linkedin.com/in/df-danielfilho/\">LinkedIn</a> for updates.</p>\n        </div>\n      </div>\n    \n```\n\n\n::: {#posts-list}\n:::\n\n",
     "supporting": [
-      "index_files"
+      "index_files/figure-html"
     ],
     "filters": [],
     "includes": {

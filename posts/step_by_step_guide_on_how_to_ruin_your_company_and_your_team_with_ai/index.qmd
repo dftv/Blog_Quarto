@@ -1,12 +1,17 @@
 ---
-title: "Post example"
-description: "This is a post example"
+title: "Step by step guide on how to ruin your company and your team with AI"
+subtitle: "A roadmap to the quickest way to lose your team's trust"
+description: "A"
 
-date: "01/04/2025"
+date: "02/07/2025"
 
 categories:
-  - example
-  - post
+  - Behavioral Analysis
+  - Artificial Intelligence
+  - Ethics
+  - Management
+
+draft: false
 ---
 
 Post example
@@ -17,7 +22,7 @@ Post example
         data-repo-id="R_kgDONv_J5g"
         data-category="Posts"
         data-mapping="number"
-        data-term="3"
+        data-term="8"
         data-strict="0"
         data-reactions-enabled="1"
         data-emit-metadata="0"
