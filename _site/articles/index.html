@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="In-depth analyses and reflections on specific topics, providing detailed insights and perspectives.">
 
 <title>Articles – DF’s Blog</title>
 <style>
@@ -23,7 +24,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -72,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-articles-list .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -85,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-articles-list'] = new List('listing-articles-list', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -98,6 +99,9 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -200,6 +204,11 @@ window.Quarto = {
 <h1 class="title">Articles</h1>
 </div>
 
+<div>
+  <div class="description">
+    In-depth analyses and reflections on specific topics, providing detailed insights and perspectives.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta column-page-left">
@@ -214,16 +223,26 @@ window.Quarto = {
 </header>
 
 
-<p>Todos os artigos do blog.</p>
 
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+      <div class="callout callout-style-default callout-caution callout-titled">
+        <div class="callout-header d-flex align-content-center">
+          <div class="callout-icon-container">
+            <i class="callout-icon"></i>
+          </div>
+          <div class="callout-title-container flex-fill">
+            Notice
+          </div>
+        </div>
+        <div class="callout-body-container callout-body">
+          <p>This blog is a work in progress. Follow me on <a href="https://www.linkedin.com/in/df-danielfilho/" target="_blank" data-original-href="https://www.linkedin.com/in/df-danielfilho/">LinkedIn</a> for updates.</p>
+        </div>
+      </div>
+    
+<div id="listing-articles-list" class="quarto-listing quarto-listing-container-default">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
      <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+     <select id="listing-articles-list-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-articles-list'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
        <option value="" disabled="" selected="" hidden="">Order By</option>
        <option value="index" data-direction="asc">Default</option>
          <option value="listing-date-sort" data-direction="asc">
@@ -244,7 +263,12 @@ window.Quarto = {
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div></main> <!-- /main -->
+</div>
+
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -1,9 +1,11 @@
 ---
 title: "Articles"
+description: "In-depth analyses and reflections on specific topics, providing detailed insights and perspectives."
 
 page-layout: full
 
 listing:
+  id: articles-list
   contents: .
   sort: "date desc"
   type: default
@@ -21,4 +23,22 @@ listing:
 draft: false
 ---
 
-Todos os artigos do blog.
+```{python}
+# | echo: false
+# | output: asis
+import sys
+import os
+
+sys.path.append(os.path.abspath(".."))
+
+from widgets import noticeWidget
+```
+
+```{python}
+# | echo: false
+# | output: asis
+noticeWidget()
+```
+
+::: {#articles-list}
+:::

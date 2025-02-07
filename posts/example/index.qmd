@@ -3,7 +3,7 @@ title: "Post example"
 
 description: "This is a post example"
 
-date: "01/01/2025"
+date: "01/04/2025"
 
 categories:
   - example

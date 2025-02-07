@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Welcome to my blog!">
+<meta name="description" content="Welcome to my personal blog!">
 
-<title>Home – DF’s Blog</title>
+<title>DF’s Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,7 +24,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -32,6 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./assets/icons/favicon.ico" rel="icon">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,9 +70,70 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-feed-list .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-</head>
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-subtitle','listing-categories','listing-description','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-feed-list'] = new List('listing-feed-list', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="alternate" type="application/rss+xml" title="DF's Blog" href="index.xml" data-external="1"></head>
 
 <body class="nav-fixed">
 
@@ -137,12 +200,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Home</h1>
+<h1 class="title">DF’s Blog</h1>
 </div>
 
 <div>
   <div class="description">
-    Welcome to my blog!
+    Welcome to my personal blog!
   </div>
 </div>
 
@@ -159,9 +222,75 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Blog Home Screen.</p>
+<hr>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+My dilemma
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Be everything you can be.<br>
+Invent, improve and implement.</p>
+</div>
+</div>
+<section id="highlights" class="level2">
+<h2 class="anchored" data-anchor-id="highlights">Highlights</h2>
+<blockquote class="blockquote">
+<p>This is a collection of my thoughts, projects, articles, and achievements.</p>
+</blockquote>
+
+      <div class="callout callout-style-default callout-caution callout-titled">
+        <div class="callout-header d-flex align-content-center">
+          <div class="callout-icon-container">
+            <i class="callout-icon"></i>
+          </div>
+          <div class="callout-title-container flex-fill">
+            Notice
+          </div>
+        </div>
+        <div class="callout-body-container callout-body">
+          <p>This blog is a work in progress. Follow me on <a href="https://www.linkedin.com/in/df-danielfilho/" target="_blank" data-original-href="https://www.linkedin.com/in/df-danielfilho/">LinkedIn</a> for updates.</p>
+        </div>
+      </div>
+    
+<hr>
+</section>
+<section id="feed" class="level2">
+<h2 class="anchored" data-anchor-id="feed">Feed</h2>
+<blockquote class="blockquote">
+<p>This is a feed of my latest posts, projects, articles, and achievements.</p>
+</blockquote>
+
+      <div class="callout callout-style-default callout-caution callout-titled">
+        <div class="callout-header d-flex align-content-center">
+          <div class="callout-icon-container">
+            <i class="callout-icon"></i>
+          </div>
+          <div class="callout-title-container flex-fill">
+            Notice
+          </div>
+        </div>
+        <div class="callout-body-container callout-body">
+          <p>This blog is a work in progress. Follow me on <a href="https://www.linkedin.com/in/df-danielfilho/" target="_blank" data-original-href="https://www.linkedin.com/in/df-danielfilho/">LinkedIn</a> for updates.</p>
+        </div>
+      </div>
+    
+<div id="listing-feed-list" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
 
 
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
