@@ -58,6 +58,11 @@ $pagination-hover-border-color: $primary !default;
 
 /*-- scss:rules --*/
 
+:root {
+  --mermaid-font-family: #{$font-family};
+  --mermaid-label-fg-color: #{$dark};
+}
+
 * {
   font-family: $font-family !important;
 }
@@ -128,8 +133,4 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,10
 
 .card {
   border-color: $gray-300;
-}
-
-.nodeLabel {
-  color: $dark !important;
 }
