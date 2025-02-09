@@ -149,11 +149,11 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,10
   border-color: $gray-700;
 }
 
-#mermaid-2 .labelBkg {
+.labelBkg {
   background-color: $favorite !important;
 }
 
-#mermaid-2 .edgeLabel p {
+.edgeLabel p {
   padding: 0.5rem 1rem;
 
   color: $dark !important;
