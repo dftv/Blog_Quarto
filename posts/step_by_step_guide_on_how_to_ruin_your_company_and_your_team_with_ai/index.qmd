@@ -1,7 +1,7 @@
 ---
 title: "Step by step guide on how to ruin your company and your team with AI"
 subtitle: "A roadmap to the quickest way to lose your team's trust"
-description: "A"
+description: "This post aims to apply psychology concepts to address a sensitive topic for those who are limited by the use of generative artificial intelligence tools in the professional environment, acting as a direct attack on the intellect, raising questions and seeking plausible solutions."
 
 date: "02/07/2025"
 
@@ -13,8 +13,6 @@ categories:
 
 draft: false
 ---
-
-Post example
 
 :::{.column-body}
 <script src="https://giscus.app/client.js"

@@ -50,7 +50,7 @@ format:
       light: themes/light_theme.scss
       dark: themes/dark_theme.scss
 
-    date-format: DD/MM/YYYY
+    date-format: long
 
     page-layout: full
     
