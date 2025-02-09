@@ -44,7 +44,7 @@ $body-color: $white !default;
 $contrast-bg: color-contrast($body-bg) !default;
 $contrast-fg: color-contrast($contrast-bg) !default;
 
-$link-color: $white !default;
+$link-color: $favorite !default;
 
 $font-family: "Poppins" !default;
 $font-weight: 500 !default;
@@ -65,6 +65,9 @@ $pagination-hover-border-color: $primary !default;
 
 * {
   font-family: $font-family !important;
+  --bs-navbar-active-color: #{$light};
+  --bs-nav-link-hover-color: #{$light};
+  --bs-navbar-brand-hover-color: #{$favorite};
 }
 
 $web-font-path: "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" !default;
