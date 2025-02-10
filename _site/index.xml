@@ -28,7 +28,7 @@
 <li>Diminuindo sua carga de trabalho;</li>
 <li>E ainda, com a ferramenta mais revolucionaria do momento<sup>1</sup>!</li>
 </ul>
-<p>Pra entender melhor em quais pontos você pode falhar e deixar isso explícito para todos, vamos se atentar ao seguinte fluxo que criei:</p>
+<p>Pra entender melhor em quais pontos você pode falhar e deixar isso explícito para todos, vamos nos atentar ao seguinte fluxo que criei:</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div>
@@ -141,16 +141,31 @@
 <hr>
 <p>Pode ser que você tenha se sentido atacado por como a introdução a este tópico foi abordada.</p>
 <p>Se sim, parte desse mérito vem do fenômeno da Reatância Psicológica<sup>2</sup> combinado com traços de Psicologia Reversa<sup>3</sup>.</p>
-<p>Que ao exagerar propositalmente os impactos do uso desenfreado dessa ferramenta milagrosa<sup>4</sup> — tratando como “correto” algo que normalmente é mal visto — você, como plausível publico alvo, tende a buscar a negação através da resistência natural. Afinal, quão custoso é admitir que tudo que atualmente te torna um profissional pode ser facilmente o pesadelo de muitos outros colaboradores? Ou até mesmo, que você pode ser substituído por uma ferramenta inanimada?</p>
+<p>Ao exagerar deliberadamente os impactos do uso indiscriminado dessa ferramenta milagrosa<sup>4</sup> — tratando como “correto” algo que normalmente é mal visto — você, como plausível publico alvo, tende a buscar a negação através da resistência natural. Afinal, quão custoso é admitir que aquilo que atualmente te torna um profissional pode ser facilmente o pesadelo de muitos outros colaboradores? Ou até mesmo, que você pode ser substituído por uma ferramenta inanimada?</p>
 <p>A reação negativa desta categoria de trabalhadores é esperada, uma vez que já está dependente deste facilitador<sup>5</sup> e a ideia de que ele pode ser prejudicial não apenas a você mas a todos ao seu redor é algo que não se encaixa nos resultados a curto prazo presenciados até então.</p>
-<p>Em uma perspectiva mais externa, creio que parte dessa culpa possa não vir a ser 100% sua, mas sim de quem te vendeu a ideia de que esta ferramenta<sup>6</sup> é a solução para todas as suas tarefas monótonas, porém a falta de supervisão e limitação deste uso sempre levará a aplicação da ferramenta<sup>7</sup> nas mais diversas áreas, sem a devida análise de impacto e consequências, não mais apenas em tarefas monótonas e projetadas para ela<sup>8</sup>.</p>
-<p>Atualmente esta é uma ferramenta<sup>9</sup> em desenvolvimento e muito longe de seu ápice, possuindo limitações e falhas que são imperceptíveis a olho nu, tendo em vista que todo seu funcionamento é projetado para agradar socialmente o usuário, ou seja, para que você não sinta que está de frente a uma informação erronia ou sem sentido.</p>
-<p>Não convencido? Talvez ainda se encontre classificado no Viés de Automação<sup>10</sup>.</p>
-<p>Então aqui vão alguns fenômenos que podem ocorrer diariamente com você e que não são perceptíveis:</p>
+<p>Em uma perspectiva mais externa, creio que parte dessa culpa possa não vir a ser 100% sua, mas sim de quem te vendeu a ideia de que esta ferramenta<sup>6</sup> é a solução para todas as suas tarefas monótonas, porém a falta de supervisão e limitação deste uso sempre levará a aplicação da solução<sup>7</sup> nas mais diversas áreas, sem a devida análise de impacto e consequências, não mais apenas em tarefas monótonas e projetadas para ela<sup>8</sup>.</p>
+<p>Atualmente a maioria dos modelos de IA estão em desenvolvimento constante e muito longe de seu ápice, possuindo limitações e falhas que são imperceptíveis a olho nu, tendo em vista que todo seu funcionamento é projetado para agradar socialmente o usuário, ou seja, para que você não sinta que está de frente a uma informação errônea ou sem sentido.</p>
+<p>Não convencido? Talvez ainda se encontre classificado no Viés de Automação<sup>9</sup>. Para abrir seus olhos apresento aqui alguns fenômenos que podem ocorrer diariamente com você e que você não leva em conta:</p>
 <ul>
-<li>Alucinações<sup>11</sup>: Que se trata da falha</li>
-<li>Janela de contexto<sup>12</sup>:</li>
+<li>As <strong>Alucinações</strong><sup>10</sup>, onde a ferramenta<sup>11</sup> gera respostas que, embora pareçam coerentes, não possuem embasamento real, sendo apenas uma aproximação estatística<sup>12</sup> com o que se encaixaria melhor no espaço do presente contexto. Isso ocorre devido a falta de pensamento logico nestes produtos<sup>13</sup>, podendo, neste ponto categorizar respostas como meros “chutes”.</li>
+<li>E as <strong>Janela de contexto</strong><sup>14</sup>, que limita a quantidade de informações processáveis simultaneamente pela ferramenta<sup>15</sup>, fazendo com que quase sempre, não consiga entender o contexto completo da situação, gerando respostas que não condizem com a realidade. Se tornando mais preocupante a medida que não há explicitude sobre o que é ou não descartado por ela<sup>16</sup>.</li>
 </ul>
+<p>Podemos concluir então que a utilização de ferramentas de IA em ambientes corporativos deve ser feita com cautela e sempre com a supervisão de um profissional capacitado. Afinal, ainda não existem ferramentas que sirvam de substituto para o pensamento crítico e a tomada de decisões assertivas, independente do quão convincente e conveniente ela possa parecer.</p>
+<p>Espero que esta leitura possa ter te ajudado a abrir seus olhos para os perigos de automatizadores “milagrosos”, tanto para atual IA quanto para futuras tecnologias que possam vir a surgir.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lembre-se
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O problema em si nunca será a ferramenta, mas sim a forma como ela é utilizada!</p>
+</div>
+</div>
+<hr>
 <div class="column-body">
 <script src="https://giscus.app/client.js" data-repo="dftv/blog_quarto" data-repo-id="R_kgDONv_J5g" data-category="Posts" data-mapping="number" data-term="8" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
 </script>
@@ -180,17 +195,21 @@ Steindl, Christina, Eva Jonas, Sandra Sittenthaler, Eva Traut-Mattausch, and Jef
 
 <ol>
 <li id="fn1"><p>A inteligência artificial generativa↩︎</p></li>
-<li id="fn2"><p><span class="citation" data-cites="UnderstandingPsychologicalReactance">Steindl et al. (2015)</span>↩︎</p></li>
-<li id="fn3"><p><span class="citation" data-cites="HowDoesReversePsychologyWork">Cherry (2023)</span>↩︎</p></li>
+<li id="fn2"><p>Veja mais em <span class="citation" data-cites="UnderstandingPsychologicalReactance">Steindl et al. (2015)</span>↩︎</p></li>
+<li id="fn3"><p>Veja mais em <span class="citation" data-cites="HowDoesReversePsychologyWork">Cherry (2023)</span>↩︎</p></li>
 <li id="fn4"><p>A inteligência artificial generativa↩︎</p></li>
 <li id="fn5"><p>A inteligência artificial generativa↩︎</p></li>
 <li id="fn6"><p>A inteligência artificial generativa↩︎</p></li>
 <li id="fn7"><p>A inteligência artificial generativa↩︎</p></li>
 <li id="fn8"><p>A inteligência artificial generativa↩︎</p></li>
-<li id="fn9"><p>A inteligência artificial generativa↩︎</p></li>
-<li id="fn10"><p><span class="citation" data-cites="DoesAutomationBiasDecisionMaking">SKITKA, MOSIER, and BURDICK (1999)</span>↩︎</p></li>
-<li id="fn11"><p><span class="citation" data-cites="WhatAreAIHallucinations">IBM (2023)</span>↩︎</p></li>
-<li id="fn12"><p><span class="citation" data-cites="WhatIsAContextWindow">Bergmann (2024)</span>↩︎</p></li>
+<li id="fn9"><p>Veja mais em <span class="citation" data-cites="DoesAutomationBiasDecisionMaking">SKITKA, MOSIER, and BURDICK (1999)</span>↩︎</p></li>
+<li id="fn10"><p>Veja mais em <span class="citation" data-cites="WhatAreAIHallucinations">IBM (2023)</span>↩︎</p></li>
+<li id="fn11"><p>A inteligência artificial generativa↩︎</p></li>
+<li id="fn12"><p>Que pode vir a ter uma definição de pesos equivocada↩︎</p></li>
+<li id="fn13"><p>As inteligências artificiais generativas↩︎</p></li>
+<li id="fn14"><p>Veja mais em <span class="citation" data-cites="WhatIsAContextWindow">Bergmann (2024)</span>↩︎</p></li>
+<li id="fn15"><p>A inteligência artificial generativa↩︎</p></li>
+<li id="fn16"><p>A inteligência artificial generativa↩︎</p></li>
 </ol>
 </section></div> ]]></description>
   <category>Behavioral Analysis</category>

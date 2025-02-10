@@ -1040,7 +1040,7 @@ $theme-name: null !default;
 // quarto-scss-analysis-annotation { "origin": "Defaults from user-defined SCSS" }
 
 
-$theme: "df_theme_light" !default;
+$theme: "df_theme_dark" !default;
 
 $white: #fafafa !default;
 $gray-100: #f1f1f1 !default;
@@ -1065,8 +1065,8 @@ $green: #198754 !default;
 $teal: #20c997 !default;
 $cyan: #0dcaf0 !default;
 
-$primary: $white !default;
-$secondary: $black !default;
+$primary: $black !default;
+$secondary: $white !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
@@ -1078,8 +1078,8 @@ $favorite: #ff7f00 !default;
 
 $min-contrast-ratio: 1.28 !default;
 
-$body-bg: $white !default;
-$body-color: $black !default;
+$body-bg: $black !default;
+$body-color: $white !default;
 
 $contrast-bg: color-contrast($body-bg) !default;
 $contrast-fg: color-contrast($contrast-bg) !default;
@@ -1153,8 +1153,8 @@ $title-banner-bg: null !default;
 $title-banner-image: null !default;
 
 
-$btn-code-copy-color: #5E5E5E !default;
-$btn-code-copy-color-active: #4758AB !default;
+$btn-code-copy-color: #f8f8f2 !default;
+$btn-code-copy-color-active: #ffa07a !default;
 
 // quarto-scss-analysis-annotation { "origin": "Defaults from Quarto's SCSS" }
 
@@ -12814,29 +12814,44 @@ main.quarto-banner-title-block > section:first-child > h4 {
 }
 
 
-// :root {
-//   --mermaid-font-family: #{$font-family};
-//   --mermaid-label-fg-color: #{$dark};
-// }
-
 :root {
-  --mermaid-bg-color: #{$orange;
-  --mermaid-edge-color: #{$mermaid-edge-color};
-  --mermaid-node-fg-color: #{$mermaid-node-fg-color};
-  --mermaid-fg-color: #{$mermaid-fg-color};
-  --mermaid-fg-color--lighter: #{$mermaid-fg-color--lighter};
-  --mermaid-fg-color--lightest: #{$mermaid-fg-color--lightest};
-  --mermaid-font-family: #{$mermaid-font-family};
-  --mermaid-label-bg-color: #{$mermaid-label-bg-color};
-  --mermaid-label-fg-color: #{$mermaid-label-fg-color};
-  --mermaid-node-bg-color: #{$mermaid-node-bg-color};
-  --mermaid-node-fg-color: #{$mermaid-node-fg-color};
+  --mermaid-bg-color: #{$body-bg};
+  --mermaid-edge-color: #{$light};
+  --mermaid-node-fg-color: #{$yellow};
+  --mermaid-fg-color: #{$yellow};
+  --mermaid-fg-color--lighter: #{$light};
+  --mermaid-fg-color--lightest: #{rgba($light, 0.05)};
+  --mermaid-font-family: #{$font-family};
+  --mermaid-label-bg-color: #{$light};
+  --mermaid-label-fg-color: #{$light};
+  --mermaid-node-bg-color: #{rgba($light, 0.05)};
+  --mermaid-node-fg-color: #{$light};
+  --scrollbar-bg: $dark;
+  --scrollbar-thumb: ${$black};
+  --scrollbar-thumb-hover: #{$favorite};
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover);
 }
 
 * {
   font-family: $font-family !important;
-  --bs-navbar-active-color: #{$dark};
-  --bs-nav-link-hover-color: #{$dark};
+  --bs-navbar-active-color: #{$light};
+  --bs-nav-link-hover-color: #{$light};
   --bs-navbar-brand-hover-color: #{$favorite};
 }
 
@@ -12849,7 +12864,7 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,10
   font-family: $font-family;
   font-size: 18px;
   font-weight: $font-weight;
-  border-bottom: $dark 1px solid;
+  border-bottom: $white 1px solid;
 }
 
 .navbar-brand {
@@ -12877,7 +12892,7 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,10
 
 .dropdown-item {
   &:hover {
-    background-color: $gray-100 !important;
+    background-color: $gray-900 !important;
   }
 }
 
@@ -12889,11 +12904,11 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,10
 
 .listing-category {
   font-weight: 500;
-  color: $dark !important;
+  color: $light !important;
 }
 
 .quarto-category {
-  color: $dark !important;
+  color: $light !important;
 
   & a {
     font-weight: 500;
@@ -12901,11 +12916,27 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,10
 }
 
 .form-select {
+  background-color: $light;
+
   color: $dark;
 }
 
 .card {
-  border-color: $gray-300;
+  border-color: $gray-700;
+}
+
+.labelBkg {
+  background-color: $favorite !important;
+}
+
+.edgeLabel p {
+  padding: 0.5rem 1rem;
+
+  color: $dark !important;
+}
+
+.navbar .quarto-navbar-tools .quarto-navigation-tool:hover {
+  color: $favorite;
 }
 
 

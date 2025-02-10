@@ -28,7 +28,7 @@ E o melhor de tudo:
 * Diminuindo sua carga de trabalho;
 * E ainda, com a ferramenta mais revolucionaria do momento[^1]!
 
-Pra entender melhor em quais pontos você pode falhar e deixar isso explícito para todos, vamos se atentar ao seguinte fluxo que criei:
+Pra entender melhor em quais pontos você pode falhar e deixar isso explícito para todos, vamos nos atentar ao seguinte fluxo que criei:
 
 ```{mermaid}
 %%| fig-align: center
@@ -139,28 +139,41 @@ Pode ser que você tenha se sentido atacado por como a introdução a este tópi
 
 Se sim, parte desse mérito vem do fenômeno da Reatância Psicológica[^2] combinado com traços de Psicologia Reversa[^3].
 
-Que ao exagerar propositalmente os impactos do uso desenfreado dessa ferramenta milagrosa[^1] — tratando como "correto" algo que normalmente é mal visto — você, como plausível publico alvo, tende a buscar a negação através da resistência natural. Afinal, quão custoso é admitir que tudo que atualmente te torna um profissional pode ser facilmente o pesadelo de muitos outros colaboradores? Ou até mesmo, que você pode ser substituído por uma ferramenta inanimada?
+Ao exagerar deliberadamente os impactos do uso indiscriminado dessa ferramenta milagrosa[^1] — tratando como "correto" algo que normalmente é mal visto — você, como plausível publico alvo, tende a buscar a negação através da resistência natural. Afinal, quão custoso é admitir que aquilo que atualmente te torna um profissional pode ser facilmente o pesadelo de muitos outros colaboradores? Ou até mesmo, que você pode ser substituído por uma ferramenta inanimada?
 
 A reação negativa desta categoria de trabalhadores é esperada, uma vez que já está dependente deste facilitador[^1] e a ideia de que ele pode ser prejudicial não apenas a você mas a todos ao seu redor é algo que não se encaixa nos resultados a curto prazo presenciados até então.
 
-Em uma perspectiva mais externa, creio que parte dessa culpa possa não vir a ser 100% sua, mas sim de quem te vendeu a ideia de que esta ferramenta[^1] é a solução para todas as suas tarefas monótonas, porém a falta de supervisão e limitação deste uso sempre levará a aplicação da ferramenta[^1] nas mais diversas áreas, sem a devida análise de impacto e consequências, não mais apenas em tarefas monótonas e projetadas para ela[^1].
+Em uma perspectiva mais externa, creio que parte dessa culpa possa não vir a ser 100% sua, mas sim de quem te vendeu a ideia de que esta ferramenta[^1] é a solução para todas as suas tarefas monótonas, porém a falta de supervisão e limitação deste uso sempre levará a aplicação da solução[^1] nas mais diversas áreas, sem a devida análise de impacto e consequências, não mais apenas em tarefas monótonas e projetadas para ela[^1].
 
-Atualmente esta é uma ferramenta[^1] em desenvolvimento e muito longe de seu ápice, possuindo limitações e falhas que são imperceptíveis a olho nu, tendo em vista que todo seu funcionamento é projetado para agradar socialmente o usuário, ou seja, para que você não sinta que está de frente a uma informação erronia ou sem sentido.
+Atualmente a maioria dos modelos de IA estão em desenvolvimento constante e muito longe de seu ápice, possuindo limitações e falhas que são imperceptíveis a olho nu, tendo em vista que todo seu funcionamento é projetado para agradar socialmente o usuário, ou seja, para que você não sinta que está de frente a uma informação errônea ou sem sentido.
 
 Não convencido? Talvez ainda se encontre classificado no Viés de Automação[^4].
+Para abrir seus olhos apresento aqui alguns fenômenos que podem ocorrer diariamente com você e que você não leva em conta:
 
-Então aqui vão alguns fenômenos que podem ocorrer diariamente com você e que não são perceptíveis:
+* As **Alucinações**[^5], onde a ferramenta[^1] gera respostas que, embora pareçam coerentes, não possuem embasamento real, sendo apenas uma aproximação estatística[^8] com o que se encaixaria melhor no espaço do presente contexto.
+Isso ocorre devido a falta de pensamento logico nestes produtos[^7], podendo, neste ponto categorizar respostas como meros "chutes".
+* E as **Janela de contexto**[^6], que limita a quantidade de informações processáveis simultaneamente pela ferramenta[^1], fazendo com que quase sempre, não consiga entender o contexto completo da situação, gerando respostas que não condizem com a realidade. Se tornando mais preocupante a medida que não há explicitude sobre o que é ou não descartado por ela[^1].
 
-* Alucinações[^5]: Que se trata da falha 
-* Janela de contexto[^6]:
+Podemos concluir então que a utilização de ferramentas de IA em ambientes corporativos deve ser feita com cautela e sempre com a supervisão de um profissional capacitado. Afinal, ainda não existem ferramentas que sirvam de substituto para o pensamento crítico e a tomada de decisões assertivas, independente do quão convincente e conveniente ela possa parecer.
 
+Espero que esta leitura possa ter te ajudado a abrir seus olhos para os perigos de automatizadores "milagrosos", tanto para atual IA quanto para futuras tecnologias que possam vir a surgir.
+
+::: {.callout-tip}
+## Lembre-se
+
+O problema em si nunca será a ferramenta, mas sim a forma como ela é utilizada!
+:::
+
+---
 
 [^1]: A inteligência artificial generativa
-[^2]: @UnderstandingPsychologicalReactance
-[^3]: @HowDoesReversePsychologyWork
-[^4]: @DoesAutomationBiasDecisionMaking
-[^5]: @WhatAreAIHallucinations
-[^6]: @WhatIsAContextWindow
+[^2]: Veja mais em @UnderstandingPsychologicalReactance
+[^3]: Veja mais em @HowDoesReversePsychologyWork
+[^4]: Veja mais em @DoesAutomationBiasDecisionMaking
+[^5]: Veja mais em @WhatAreAIHallucinations
+[^6]: Veja mais em @WhatIsAContextWindow
+[^7]: As inteligências artificiais generativas
+[^8]: Que pode vir a ter uma definição de pesos equivocada
 
 :::{.column-body}
 <script src="https://giscus.app/client.js"

@@ -15,7 +15,7 @@ listing:
   fields:
     - image
     - date
-    - reading_time
+    - reading-time
     - title
     - categories
     - description
