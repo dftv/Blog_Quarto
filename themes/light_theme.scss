@@ -70,6 +70,26 @@ $pagination-hover-border-color: $primary !default;
   --mermaid-label-fg-color: #{$dark};
   --mermaid-node-bg-color: #{rgba($dark, 0.05)};
   --mermaid-node-fg-color: #{$dark};
+  --scrollbar-bg: $light;
+  --scrollbar-thumb: #{$dark};
+  --scrollbar-thumb-hover: #{rgba($dark, 0.5)};
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover);
 }
 
 * {
