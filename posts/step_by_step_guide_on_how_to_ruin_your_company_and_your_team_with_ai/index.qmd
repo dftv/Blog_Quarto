@@ -3,7 +3,7 @@ title: "Step by step guide on how to ruin your company and your team with AI"
 subtitle: "A roadmap to the quickest way to lose your team's trust"
 description: "This post aims to apply psychology concepts to address a sensitive topic for those who are limited by the use of generative artificial intelligence tools in the professional environment, acting as a direct attack on the intellect, raising questions and seeking plausible solutions."
 
-date: "02/07/2025"
+date: "02/10/2025"
 
 categories:
   - Behavioral Analysis
@@ -11,8 +11,156 @@ categories:
   - Ethics
   - Management
 
+bibliography: bibliography.bib
+
 draft: false
 ---
+
+É muito fácil manter um time organizado com um fluxo de trabalho bem definido, né?
+
+Pra você que deseja demonstrar sua incapacidade ou simplesmente ver o circo pegar fogo, este post é para você!
+
+Já em cargo de liderança e disposto a ser contrafluxo, aí vão algumas dicas para mudar tudo do vinho para o vinagre, trazendo da forma mais rápida possível a desorganização e a desmotivação para todos que dependem do seu trabalho.
+
+E o melhor de tudo:
+
+* Sem precisar de muito esforço;
+* Diminuindo sua carga de trabalho;
+* E ainda, com a ferramenta mais revolucionaria do momento[^1]!
+
+Pra entender melhor em quais pontos você pode falhar e deixar isso explícito para todos, vamos se atentar ao seguinte fluxo que criei:
+
+```{mermaid}
+%%| fig-align: center
+flowchart TB;
+  T1[
+    Ao #quot;otimizar#quot; com IA processos como:
+  ]
+
+  subgraph G1[ ]
+    G1.1[
+      Envio de mensagens ou
+      e-mails corporativos
+    ]
+
+    G1.2[
+      Resolução de
+      problemas
+    ]
+
+    G1.3[Delegação de tarefas]
+
+    G1.4[Tomada de decisões]
+  end
+
+  subgraph G2[ ]
+    subgraph G2.1[ ]
+      direction TB
+
+      G2.1.1[Falta de empatia e skills sociais]
+      G2.1.2[Desconhecimento do contexto]
+      G2.1.3[Desconsideração de feedbacks]
+      G2.1.4[Comunicação ineficaz]
+
+      G2.1.1 --> G2.1.2
+      G2.1.2 --> G2.1.3
+      G2.1.3 --> G2.1.4
+    end
+
+    subgraph G2.2[ ]
+      direction TB
+
+      G2.2.1[Superficialidade técnica]
+      G2.2.2[Falta de liderança ativa]
+      G2.2.3[Decisões impessoais e sem embasamento coerente ao contexto]
+      G2.2.4[Incapacidade de resolucionar problemas]
+
+      G2.2.1 --> G2.2.2
+      G2.2.2 --> G2.2.3
+      G2.2.3 --> G2.2.4
+    end
+
+    subgraph G2.3[ ]
+      direction TB
+
+      G2.3.1[Superficialidade técnica]
+      G2.3.2[Falta de compreensão de processos internos e regras de negócio]
+      G2.3.3[Desapego a organização e planejamento]
+      G2.3.4[Ineficiência em delegar tarefas]
+
+      G2.3.1 --> G2.3.2
+      G2.3.2 --> G2.3.3
+      G2.3.3 --> G2.3.4
+    end
+
+    subgraph G2.4[ ]
+      direction TB
+
+      G2.4.1[Falta de liderança ativa]
+      G2.4.2[Desconsideração de feedbacks e fatores humanos]
+      G2.4.3[Desapego a organização e planejamento]
+      G2.4.4[Incapacidade de tomar decisões assertivas]
+
+      G2.4.1 --> G2.4.2
+      G2.4.2 --> G2.4.3
+      G2.4.3 --> G2.4.4
+    end
+  end
+
+  subgraph G3[ ]
+    G3.1[Perda de confiança na liderança]
+    G3.2[Desconfiança sobre seus conhecimentos]
+    G3.3[Aumento de erros e retrabalho]
+    G3.4[Conflitos internos entre times e setores]
+  end
+
+  T2[Ambiente desmotivado e improdutivo]
+
+  T1 -->  G1.1 & G1.2 & G1.3 & G1.4
+
+  G1.1 -- Você demonstra --> G2.1
+  G1.2 -- Você demonstra --> G2.2
+  G1.3 -- Você demonstra --> G2.3
+  G1.4 -- Você demonstra --> G2.4
+
+  G2.1 -- Desencadeando --> G3.1
+  G2.2 -- Desencadeando --> G3.2
+  G2.3 -- Desencadeando --> G3.3
+  G2.4 -- Desencadeando --> G3.4
+
+  G3.1 & G3.2 & G3.3 & G3.4 -- Que resultam em --> T2
+```
+
+Note como fica fácil visualizar como que processos simples são capazes de desencadear uma série de problemas que garantirão a sua irrefutável exclusão e futura demissão...
+
+---
+
+Pode ser que você tenha se sentido atacado por como a introdução a este tópico foi abordada.
+
+Se sim, parte desse mérito vem do fenômeno da Reatância Psicológica[^2] combinado com traços de Psicologia Reversa[^3].
+
+Que ao exagerar propositalmente os impactos do uso desenfreado dessa ferramenta milagrosa[^1] — tratando como "correto" algo que normalmente é mal visto — você, como plausível publico alvo, tende a buscar a negação através da resistência natural. Afinal, quão custoso é admitir que tudo que atualmente te torna um profissional pode ser facilmente o pesadelo de muitos outros colaboradores? Ou até mesmo, que você pode ser substituído por uma ferramenta inanimada?
+
+A reação negativa desta categoria de trabalhadores é esperada, uma vez que já está dependente deste facilitador[^1] e a ideia de que ele pode ser prejudicial não apenas a você mas a todos ao seu redor é algo que não se encaixa nos resultados a curto prazo presenciados até então.
+
+Em uma perspectiva mais externa, creio que parte dessa culpa possa não vir a ser 100% sua, mas sim de quem te vendeu a ideia de que esta ferramenta[^1] é a solução para todas as suas tarefas monótonas, porém a falta de supervisão e limitação deste uso sempre levará a aplicação da ferramenta[^1] nas mais diversas áreas, sem a devida análise de impacto e consequências, não mais apenas em tarefas monótonas e projetadas para ela[^1].
+
+Atualmente esta é uma ferramenta[^1] em desenvolvimento e muito longe de seu ápice, possuindo limitações e falhas que são imperceptíveis a olho nu, tendo em vista que todo seu funcionamento é projetado para agradar socialmente o usuário, ou seja, para que você não sinta que está de frente a uma informação erronia ou sem sentido.
+
+Não convencido? Talvez ainda se encontre classificado no Viés de Automação[^4].
+
+Então aqui vão alguns fenômenos que podem ocorrer diariamente com você e que não são perceptíveis:
+
+* Alucinações[^5]: Que se trata da falha 
+* Janela de contexto[^6]:
+
+
+[^1]: A inteligência artificial generativa
+[^2]: @UnderstandingPsychologicalReactance
+[^3]: @HowDoesReversePsychologyWork
+[^4]: @DoesAutomationBiasDecisionMaking
+[^5]: @WhatAreAIHallucinations
+[^6]: @WhatIsAContextWindow
 
 :::{.column-body}
 <script src="https://giscus.app/client.js"

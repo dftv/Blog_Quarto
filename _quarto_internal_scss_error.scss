@@ -1084,7 +1084,7 @@ $body-color: $black !default;
 $contrast-bg: color-contrast($body-bg) !default;
 $contrast-fg: color-contrast($contrast-bg) !default;
 
-$link-color: $black !default;
+$link-color: $favorite !default;
 
 $font-family: "Poppins" !default;
 $font-weight: 500 !default;
@@ -12814,15 +12814,20 @@ main.quarto-banner-title-block > section:first-child > h4 {
 }
 
 
+// :root {
+//   --mermaid-font-family: #{$font-family};
+//   --mermaid-label-fg-color: #{$dark};
+// }
+
 :root {
-  --mermaid-bg-color: #{$body-bg};
-  --mermaid-edge-color: #{$dark};
-  --mermaid-node-fg-color: #{$yellow};
-  --mermaid-fg-color: #{$blue};
-  --mermaid-fg-color--lighter: #{$red};
-  --mermaid-fg-color--lightest: #{$orange};
-  --mermaid-font-family: #{$font-family};
-  --mermaid-label-bg-color: #{$cyan;
+  --mermaid-bg-color: #{$orange;
+  --mermaid-edge-color: #{$mermaid-edge-color};
+  --mermaid-node-fg-color: #{$mermaid-node-fg-color};
+  --mermaid-fg-color: #{$mermaid-fg-color};
+  --mermaid-fg-color--lighter: #{$mermaid-fg-color--lighter};
+  --mermaid-fg-color--lightest: #{$mermaid-fg-color--lightest};
+  --mermaid-font-family: #{$mermaid-font-family};
+  --mermaid-label-bg-color: #{$mermaid-label-bg-color};
   --mermaid-label-fg-color: #{$mermaid-label-fg-color};
   --mermaid-node-bg-color: #{$mermaid-node-bg-color};
   --mermaid-node-fg-color: #{$mermaid-node-fg-color};
@@ -12830,6 +12835,9 @@ main.quarto-banner-title-block > section:first-child > h4 {
 
 * {
   font-family: $font-family !important;
+  --bs-navbar-active-color: #{$dark};
+  --bs-nav-link-hover-color: #{$dark};
+  --bs-navbar-brand-hover-color: #{$favorite};
 }
 
 $web-font-path: "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" !default;
