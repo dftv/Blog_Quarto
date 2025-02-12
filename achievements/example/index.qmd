@@ -1,6 +1,5 @@
 ---
 title: "Achievement example"
-
 description: "This is an achievement example"
 
 date: "01/01/2025"

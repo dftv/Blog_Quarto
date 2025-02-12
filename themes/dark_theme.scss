@@ -44,7 +44,7 @@ $body-color: $white !default;
 $contrast-bg: color-contrast($body-bg) !default;
 $contrast-fg: color-contrast($contrast-bg) !default;
 
-$link-color: $white !default;
+$link-color: $favorite !default;
 
 $font-family: "Poppins" !default;
 $font-weight: 500 !default;
@@ -58,8 +58,45 @@ $pagination-hover-border-color: $primary !default;
 
 /*-- scss:rules --*/
 
+:root {
+  --mermaid-bg-color: #{$body-bg};
+  --mermaid-edge-color: #{$light};
+  --mermaid-node-fg-color: #{$yellow};
+  --mermaid-fg-color: #{$yellow};
+  --mermaid-fg-color--lighter: #{$light};
+  --mermaid-fg-color--lightest: #{rgba($light, 0.05)};
+  --mermaid-font-family: #{$font-family};
+  --mermaid-label-bg-color: #{$light};
+  --mermaid-label-fg-color: #{$light};
+  --mermaid-node-bg-color: #{rgba($light, 0.05)};
+  --mermaid-node-fg-color: #{$light};
+  --scrollbar-bg: $dark;
+  --scrollbar-thumb: #{$light};
+  --scrollbar-thumb-hover: #{rgba($light, 0.5)};
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover);
+}
+
 * {
   font-family: $font-family !important;
+  --bs-navbar-active-color: #{$light};
+  --bs-nav-link-hover-color: #{$light};
+  --bs-navbar-brand-hover-color: #{$favorite};
 }
 
 $web-font-path: "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" !default;
@@ -130,4 +167,18 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,10
 
 .card {
   border-color: $gray-700;
+}
+
+.labelBkg {
+  background-color: $favorite !important;
+}
+
+.edgeLabel p {
+  padding: 0.5rem 1rem;
+
+  color: $dark !important;
+}
+
+.navbar .quarto-navbar-tools .quarto-navigation-tool:hover {
+  color: $favorite;
 }
