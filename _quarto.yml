@@ -5,10 +5,12 @@ project:
 
 website:
   title: "DF's Blog"
-
   description: "Blog pessoal"
 
   site-url: https://blog.dftv.spikeystudio.com/
+
+  open-graph: true
+  cookie-consent: false
 
   favicon: assets/icons/favicon.ico
 
@@ -43,6 +45,9 @@ website:
       - icon: github
         href: https://github.com/dftv
         target: _blank
+
+  page-footer: 
+    center: "Copyright © 2024 - Spikey Studio"
 
 format:
   html:
