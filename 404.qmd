@@ -20,20 +20,8 @@ listing:
       - date
 ---
 
-```{python}
-# | echo: false
-# | output: asis
-from widgets import noticeWidget
-```
-
 ## Feed
 > This is a feed of my latest posts, projects, articles, and achievements.
-
-```{python}
-# | echo: false
-# | output: asis
-noticeWidget()
-```
 
 ::: {#feed-list}
 :::

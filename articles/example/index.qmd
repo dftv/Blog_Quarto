@@ -1,6 +1,5 @@
 ---
 title: "Article example"
-
 description: "This is an article example"
 
 date: "01/02/2025"

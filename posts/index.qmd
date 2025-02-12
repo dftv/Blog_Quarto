@@ -15,30 +15,13 @@ listing:
   fields:
     - image
     - date
-    - reading_time
+    - reading-time
     - title
     - categories
     - description
 
 draft: false
 ---
-
-```{python}
-# | echo: false
-# | output: asis
-import sys
-import os
-
-sys.path.append(os.path.abspath(".."))
-
-from widgets import noticeWidget
-```
-
-```{python}
-# | echo: false
-# | output: asis
-noticeWidget()
-```
 
 ::: {#posts-list}
 :::

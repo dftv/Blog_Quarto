@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "blog-quarto"
 version = "0.1.0"
-description = ""
+description = "Blog"
 authors = ["Daniel Filho - DF <dr.torquato180204@gmail.com>"]
 readme = "README.md"
 package-mode = false
