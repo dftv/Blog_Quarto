@@ -45,9 +45,12 @@ website:
       - icon: github
         href: https://github.com/dftv
         target: _blank
+      - icon: rss
+        href: index.xml
+        target: _blank
 
   page-footer: 
-    center: "Copyright © 2024 - Spikey Studio"
+    center: "Copyright © 2025 - Spikey Studio"
 
 format:
   html:
@@ -60,6 +63,8 @@ format:
     page-layout: full
     
     toc: false
+
+  pdf: default
 
 resources:
   - CNAME
