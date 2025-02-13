@@ -63,9 +63,7 @@ format:
     page-layout: full
     
     toc: false
-
-  pdf: default
-
+    
 resources:
   - CNAME
 
