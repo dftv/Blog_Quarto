@@ -150,8 +150,6 @@ See how easy it is to visualize how simple processes can trigger a chain of prob
 
 :::
 
-\newpage
-
 Maybe you felt personally attacked by how this topic was introduced.
 
 If so, part of that is due to the Psychological Reactance phenomenon[^2] combined with elements of Reverse Psychology[^3].
