@@ -63,10 +63,15 @@ format:
     page-layout: full
     
     toc: false
-    
+
+    include-in-header:
+      - utils/blank_alternate_formats_util.html
+        
 resources:
   - CNAME
 
-execute: 
+execute:
+  echo: false
+  output: axis
   freeze: auto
 

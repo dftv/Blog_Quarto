@@ -1,0 +1,15 @@
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var alternateFormatsContainer = document.querySelector(
+      ".quarto-alternate-formats"
+    );
+    if (alternateFormatsContainer) {
+      var links = alternateFormatsContainer.querySelectorAll("a");
+      links.forEach(function (link) {
+        if (link.href && link.href.endsWith(".pdf")) {
+          link.setAttribute("target", "_blank");
+        }
+      });
+    }
+  });
+</script>

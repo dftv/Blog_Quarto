@@ -27,8 +27,6 @@ products.
 
 ### Experience
 ```{python}
-# | echo: false
-# | output: asis
 from widgets import (
     EmploymentType,
     ExperienceSchema,
@@ -41,8 +39,6 @@ from datetime import date
 
 
 ```{python}
-# | echo: false
-# | output: asis
 experienceWidget(
     ExperienceSchema(
         company="Argus Solutions",
@@ -69,8 +65,6 @@ experienceWidget(
 ```
 
 ```{python}
-# | echo: false
-# | output: asis
 experienceWidget(
     ExperienceSchema(
         company="Guild Market",
@@ -89,8 +83,6 @@ experienceWidget(
 ```
 
 ```{python}
-# | echo: false
-# | output: asis
 experienceWidget(
     ExperienceSchema(
         company="Woodyverso",
@@ -109,8 +101,6 @@ experienceWidget(
 ```
 
 ```{python}
-# | echo: false
-# | output: asis
 experienceWidget(
     ExperienceSchema(
         company="EMARTIM",
@@ -137,8 +127,6 @@ experienceWidget(
 ```
 
 ```{python}
-# | echo: false
-# | output: asis
 experienceWidget(
     ExperienceSchema(
         company="GBM Tech & Control",
@@ -169,15 +157,11 @@ experienceWidget(
 ### Education
 
 ```{python}
-# | echo: false
-# | output: asis
 from widgets import educationWidget, EducationSchema
 from datetime import date
 ```
 
 ```{python}
-# | echo: false
-# | output: asis
 educationWidget(
     EducationSchema(
         degree="Bachelor of Engineering in Mechatronics",
@@ -189,8 +173,6 @@ educationWidget(
 ```
 
 ```{python}
-# | echo: false
-# | output: asis
 educationWidget(
     EducationSchema(
         degree="Associate Degree in Internet Systems",
@@ -202,8 +184,6 @@ educationWidget(
 ```
 
 ```{python}
-# | echo: false
-# | output: asis
 educationWidget(
     EducationSchema(
         degree="Technical Degree in Systems Development",

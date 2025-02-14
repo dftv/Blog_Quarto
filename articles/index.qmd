@@ -24,8 +24,6 @@ draft: false
 ---
 
 ```{python}
-# | echo: false
-# | output: asis
 import sys
 import os
 
@@ -35,8 +33,6 @@ from widgets import noticeWidget
 ```
 
 ```{python}
-# | echo: false
-# | output: asis
 noticeWidget()
 ```
 

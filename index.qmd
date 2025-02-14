@@ -23,8 +23,6 @@ listing:
 ---
 
 ```{python}
-# | echo: false
-# | output: asis
 from widgets import noticeWidget
 ```
 
@@ -41,8 +39,6 @@ Invent, improve and implement.
 > This is a collection of my thoughts, projects, articles, and achievements.
 
 ```{python}
-# | echo: false
-# | output: asis
 noticeWidget()
 ```
 
