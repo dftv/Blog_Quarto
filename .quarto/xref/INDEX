@@ -1,0 +1,39 @@
+{
+  "posts/index.qmd": {
+    "index.html": "8760fa13"
+  },
+  "posts/example/index.qmd": {
+    "index.html": "a6cff1ba"
+  },
+  "posts/step_by_step_guide_on_how_to_ruin_your_company_and_your_team_with_ai/index.qmd": {
+    "index.html": "90ebecb9",
+    "index.tex": "33e7ba3a"
+  },
+  "aboutMe/resume.qmd": {
+    "resume.html": "9e3450cb"
+  },
+  "index.qmd": {
+    "index.html": "4870b2aa"
+  },
+  "articles/index.qmd": {
+    "index.html": "1f18881a"
+  },
+  "articles/example/index.qmd": {
+    "index.html": "821c794d"
+  },
+  "achievements/index.qmd": {
+    "index.html": "5e62b9a4"
+  },
+  "achievements/example/index.qmd": {
+    "index.html": "3a4f8e89"
+  },
+  "404.qmd": {
+    "404.html": "142985f5"
+  },
+  "projects/index.qmd": {
+    "index.html": "f6cbce73"
+  },
+  "projects/example/index.qmd": {
+    "index.html": "87fadbfa"
+  }
+}

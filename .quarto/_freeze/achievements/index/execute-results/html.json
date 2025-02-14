@@ -1,0 +1,16 @@
+{
+  "hash": "3f6a069cf364091e7b27b84e10c8abc2",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Achievements\"\ndescription: \"Personal milestones, events, and accomplishments.\"\n\npage-layout: full\n\nlisting:\n  id: achievements-list\n  contents: .\n  sort: \"date desc\"\n  type: grid\n  categories: true\n  filter-ui: false\n  sort-ui: [date, title]\n  fields: \n    - image\n    - title\n    - subtitle\n    - categories\n    - description\n    - date\n\ndraft: false\n---\n\n\n\n::: {#09765cd8 .cell execution_count=2}\n\n::: {.cell-output .cell-output-display execution_count=2}\n```{=html}\n\n      <div class=\"callout callout-style-default callout-caution callout-titled\">\n        <div class=\"callout-header d-flex align-content-center\">\n          <div class=\"callout-icon-container\">\n            <i class=\"callout-icon\"></i>\n          </div>\n          <div class=\"callout-title-container flex-fill\">\n            Notice\n          </div>\n        </div>\n        <div class=\"callout-body-container callout-body\">\n          <p>This blog is a work in progress. Follow me on <a href=\"https://www.linkedin.com/in/df-danielfilho/\" target=\"_blank\" data-original-href=\"https://www.linkedin.com/in/df-danielfilho/\">LinkedIn</a> for updates.</p>\n        </div>\n      </div>\n    \n```\n:::\n:::\n\n\n::: {#achievements-list}\n:::\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {
+      "include-in-header": [
+        "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js\" integrity=\"sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==\" crossorigin=\"anonymous\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js\" integrity=\"sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==\" crossorigin=\"anonymous\" data-relocate-top=\"true\"></script>\n<script type=\"application/javascript\">define('jquery', [],function() {return window.jQuery;})</script>\n"
+      ]
+    }
+  }
+}
