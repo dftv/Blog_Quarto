@@ -89,6 +89,21 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var alternateFormatsContainer = document.querySelector(
+      ".quarto-alternate-formats"
+    );
+    if (alternateFormatsContainer) {
+      var links = alternateFormatsContainer.querySelectorAll("a");
+      links.forEach(function (link) {
+        if (link.href && link.href.endsWith(".pdf")) {
+          link.setAttribute("target", "_blank");
+        }
+      });
+    }
+  });
+</script>
 <script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
 <script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
 <link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
@@ -99,7 +114,7 @@ div.csl-indent {
 <meta property="og:site_name" content="DF's Blog">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -159,7 +174,8 @@ div.csl-indent {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
 
@@ -210,7 +226,7 @@ div.csl-indent {
 <li>And with the most groundbreaking tool of the moment<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>!</li>
 </ul>
 <p>To better understand where you can fail and make it blatantly obvious to everyone, let’s break down the following workflow I’ve created:</p>
-<div class="cell" data-layout-align="center">
+<div class="cell" data-fig-width="100%" data-layout-align="center">
 <div class="cell-output-display">
 <div>
 <p></p><figure class="figure"><p></p>

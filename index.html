@@ -99,6 +99,21 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var alternateFormatsContainer = document.querySelector(
+      ".quarto-alternate-formats"
+    );
+    if (alternateFormatsContainer) {
+      var links = alternateFormatsContainer.querySelectorAll("a");
+      links.forEach(function (link) {
+        if (link.href && link.href.endsWith(".pdf")) {
+          link.setAttribute("target", "_blank");
+        }
+      });
+    }
+  });
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
 
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
@@ -246,6 +261,8 @@ Invent, improve and implement.</p>
 <blockquote class="blockquote">
 <p>This is a collection of my thoughts, projects, articles, and achievements.</p>
 </blockquote>
+<div id="3681f8f3" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display" data-execution_count="2">
 
       <div class="callout callout-style-default callout-caution callout-titled">
         <div class="callout-header d-flex align-content-center">
@@ -261,6 +278,8 @@ Invent, improve and implement.</p>
         </div>
       </div>
     
+</div>
+</div>
 <hr>
 </section>
 <section id="feed" class="level2">
@@ -270,7 +289,7 @@ Invent, improve and implement.</p>
 </blockquote>
 <div id="listing-feed-list" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="QmVoYXZpb3JhbCUyMEFuYWx5c2lzJTJDQXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyQ0V0aGljcyUyQ01hbmFnZW1lbnQ=" data-listing-date-sort="1739318400000" data-listing-file-modified-sort="1739472832431" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1267">
+<div class="quarto-post image-right" data-index="0" data-categories="QmVoYXZpb3JhbCUyMEFuYWx5c2lzJTJDQXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyQ0V0aGljcyUyQ01hbmFnZW1lbnQ=" data-listing-date-sort="1739318400000" data-listing-file-modified-sort="1739494504000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1273">
 <div class="thumbnail">
 <p><a href="./posts/step_by_step_guide_on_how_to_ruin_your_company_and_your_team_with_ai/index.html" class="no-external"></a></p><a href="./posts/step_by_step_guide_on_how_to_ruin_your_company_and_your_team_with_ai/index.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>

@@ -99,6 +99,21 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var alternateFormatsContainer = document.querySelector(
+      ".quarto-alternate-formats"
+    );
+    if (alternateFormatsContainer) {
+      var links = alternateFormatsContainer.querySelectorAll("a");
+      links.forEach(function (link) {
+        if (link.href && link.href.endsWith(".pdf")) {
+          link.setAttribute("target", "_blank");
+        }
+      });
+    }
+  });
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
 
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
@@ -227,6 +242,8 @@ window.Quarto = {
 </header>
 
 
+<div id="57a916c7" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display" data-execution_count="2">
 
       <div class="callout callout-style-default callout-caution callout-titled">
         <div class="callout-header d-flex align-content-center">
@@ -242,6 +259,8 @@ window.Quarto = {
         </div>
       </div>
     
+</div>
+</div>
 <div id="listing-articles-list" class="quarto-listing quarto-listing-container-default">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">

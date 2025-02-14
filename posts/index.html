@@ -99,6 +99,21 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var alternateFormatsContainer = document.querySelector(
+      ".quarto-alternate-formats"
+    );
+    if (alternateFormatsContainer) {
+      var links = alternateFormatsContainer.querySelectorAll("a");
+      links.forEach(function (link) {
+        if (link.href && link.href.endsWith(".pdf")) {
+          link.setAttribute("target", "_blank");
+        }
+      });
+    }
+  });
+</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -244,7 +259,7 @@ window.Quarto = {
   </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="QmVoYXZpb3JhbCUyMEFuYWx5c2lzJTJDQXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyQ0V0aGljcyUyQ01hbmFnZW1lbnQ=" data-listing-date-sort="1739318400000" data-listing-file-modified-sort="1739472832431" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1267">
+<div class="quarto-post image-right" data-index="0" data-categories="QmVoYXZpb3JhbCUyMEFuYWx5c2lzJTJDQXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyQ0V0aGljcyUyQ01hbmFnZW1lbnQ=" data-listing-date-sort="1739318400000" data-listing-file-modified-sort="1739494504000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1273">
 <div class="thumbnail">
 <p><a href="../posts/step_by_step_guide_on_how_to_ruin_your_company_and_your_team_with_ai/index.html" class="no-external"></a></p><a href="../posts/step_by_step_guide_on_how_to_ruin_your_company_and_your_team_with_ai/index.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
