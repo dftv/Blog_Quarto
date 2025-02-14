@@ -1,2 +1,4 @@
 /.quarto/
 __pycache__/
+_freeze/
+_site/
