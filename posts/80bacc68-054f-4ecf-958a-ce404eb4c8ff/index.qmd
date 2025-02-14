@@ -46,7 +46,7 @@ To better understand where you can fail and make it blatantly obvious to everyon
 %%| fig-width: 100%
 flowchart TB;
   T1[
-    By #quot;optimizing#quot; with AI processes like:
+    By optimizing with AI processes like:
   ]
 
   subgraph G1[ ]
