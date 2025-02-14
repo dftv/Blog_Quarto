@@ -1,0 +1,28 @@
+{
+  "listingMap": {
+    "posts/index.qmd": [
+      "."
+    ],
+    "index.qmd": [
+      "posts/*/index.qmd",
+      "projects/*/index.qmd",
+      "articles/*/index.qmd",
+      "achievements/*/index.qmd"
+    ],
+    "articles/index.qmd": [
+      "."
+    ],
+    "achievements/index.qmd": [
+      "."
+    ],
+    "404.qmd": [
+      "posts/*/index.qmd",
+      "projects/*/index.qmd",
+      "articles/*/index.qmd",
+      "achievements/*/index.qmd"
+    ],
+    "projects/index.qmd": [
+      "."
+    ]
+  }
+}
