@@ -14,6 +14,17 @@ categories:
 bibliography: bibliography.bib
 
 draft: false
+
+format:
+  html: default
+  pdf:
+    keep-tex: true
+    number-sections: true
+    cite-method: natbib
+    include-in-header:
+      text: |
+        \usepackage{endnotes}
+        \let\footnote=\endnote
 ---
 
 It's pretty easy to keep a team organized with a well-defined workflow, right?
@@ -32,6 +43,7 @@ To better understand where you can fail and make it blatantly obvious to everyon
 
 ```{mermaid}
 %%| fig-align: center
+%%| fig-width: 100%
 flowchart TB;
   T1[
     By #quot;optimizing#quot; with AI processes like:
@@ -132,7 +144,11 @@ flowchart TB;
 
 See how easy it is to visualize how simple processes can trigger a chain of problems that will inevitably lead to your undeniable exclusion and eventual termination?
 
+::: {.content-visible when-format="html"}
+
 ---
+
+:::
 
 Maybe you felt personally attacked by how this topic was introduced.
 
@@ -163,7 +179,14 @@ I hope this reading has helped you open your eyes to the dangers of so-called "m
 The problem is never the tool itself, but how it is used!
 :::
 
+::: {.content-visible when-format="html"}
+
 ---
+
+:::
+
+\newpage
+\theendnotes
 
 [^1]: Generative Artificial Intelligence
 [^2]: See more at @UnderstandingPsychologicalReactance
