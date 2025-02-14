@@ -35,5 +35,9 @@
   },
   "projects/example/index.qmd": {
     "index.html": "87fadbfa"
+  },
+  "posts/80bacc68-054f-4ecf-958a-ce404eb4c8ff/index.qmd": {
+    "index.html": "68f93c4b",
+    "index.tex": "f0ba6256"
   }
 }
