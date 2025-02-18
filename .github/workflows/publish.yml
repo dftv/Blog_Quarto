@@ -44,21 +44,14 @@ jobs:
           key: venv-${{ hashFiles('poetry.lock') }}
 
       - name: Install Python Dependencies with Poetry
-        run: poetry install
+        run: poetry install --no-root
 
-      - name: Ensure Poetry Virtual Environment is Used
-        run: echo "$GITHUB_WORKSPACE/.venv/bin" >> $GITHUB_PATH
+      - name: Active the virtual environment
+        run: source .venv/bin/activate
 
       - name: Render and Publish
-        run: |
-          poetry run quarto render
-          poetry run quarto publish gh-pages
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # - name: Render and Publish
-      #   uses: quarto-dev/quarto-actions/publish@v2
-      #   with:
-      #     target: gh-pages
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
