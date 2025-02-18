@@ -37,17 +37,17 @@ jobs:
           poetry config virtualenvs.create true --local
           poetry config virtualenvs.in-project true --local
 
-      - uses: actions/cache@v3
-        name: Define a cache for the virtual environment based on the dependencies lock file
+      - name: Define a cache for the virtual environment based on the dependencies lock file
+        uses: actions/cache@v3
         with:
           path: ./.venv
           key: venv-${{ hashFiles('poetry.lock') }}
 
       - name: Install Python Dependencies with Poetry
-        run: poetry install --no-root
+        run: poetry install
 
-      - name: Active the virtual environment
-        run: source .venv/bin/activate
+      - name: Ensure Poetry Virtual Environment is Used
+        run: echo "$(poetry env info --path)/bin" >> $GITHUB_PATH
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
