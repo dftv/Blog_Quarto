@@ -1,5 +1,6 @@
 # Poetry files
 poetry.lock
+poetry.toml
 
 # Quarto files
 /.quarto/
