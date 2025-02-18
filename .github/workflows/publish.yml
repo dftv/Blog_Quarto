@@ -32,11 +32,19 @@ jobs:
       - name: Install Poetry
         uses: abatilo/actions-poetry@v4
 
-      - name: Install Python Dependencies with Poetry
-        run: poetry install --no-root --no-cache
+      - name: Setup a local virtual environment
+        run: |
+          poetry config virtualenvs.create true --local
+          poetry config virtualenvs.in-project true --local
 
-      - name: Ensure Poetry Shell is Active
-        run: echo "source $(poetry env info --path)/bin/activate" >> $GITHUB_ENV
+      - uses: actions/cache@v3
+        name: Define a cache for the virtual environment based on the dependencies lock file
+        with:
+          path: ./.venv
+          key: venv-${{ hashFiles('poetry.lock') }}
+
+      - name: Install Python Dependencies with Poetry
+        run: poetry install
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
