@@ -10,6 +10,7 @@ package-mode = false
 python = "^3.12"
 jupyter = "^1.1.1"
 pydantic = "^2.10.6"
+pyyaml = "^6.0.2"
 
 
 [build-system]
