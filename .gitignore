@@ -2,7 +2,7 @@
 poetry.lock
 
 # Quarto files
-.quarto/
+/.quarto/
 _freeze/
 _site/
 index_files/
