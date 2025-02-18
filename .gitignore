@@ -1,1 +1,14 @@
+# Poetry files
+poetry.lock
+
+# Quarto files
 /.quarto/
+_freeze/
+_site/
+index_files/
+site_libs/
+*.tex
+*.ent
+
+# Python files
+__pycache__/
