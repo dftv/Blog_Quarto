@@ -23,7 +23,7 @@ jobs:
       - name: Install Quarto Dependencies
         run: quarto install tinytex
 
-      - name: Install Python and Dependencies
+      - name: Install Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -32,8 +32,11 @@ jobs:
       - name: Install Poetry
         uses: abatilo/actions-poetry@v4
 
-      - name: Install Python Dependencies
-        run: poetry install --no-root
+      - name: Install Python Dependencies with Poetry
+        run: poetry install --no-root --no-cache
+
+      - name: Ensure Poetry Shell is Active
+        run: echo "source $(poetry env info --path)/bin/activate" >> $GITHUB_ENV
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
