@@ -14,14 +14,7 @@ jupyter: python3
 
 ### Overview
 
-I am a Full-Stack Developer with extensive
-experience in a variety of technologies. My ability to
-integrate Front-End and Back-End allows me to
-create comprehensive and efficient solutions. With
-a quick learning ability and flexibility in workflow, I
-adapt rapidly to new technologies and project
-demands, ensuring the delivery of high-quality
-products.
+Research & Development Engineer with experience in software development, data science, and machine learning. As a Senior Full-Stack Engineer, I integrate Front-End and Back-End technologies to develop innovative and efficient solutions. Passionate about data-driven insights and AI, I continuously seek to enhance systems through research, optimization, and cutting-edge technology.
 
 ---
 
