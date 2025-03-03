@@ -5,8 +5,8 @@ description: Research & Development Engineer
 jupyter: python3
 ---
 
-> Senior Full-Stack Engineer,  
-> Data Scientist and Machine Learning Enthusiast
+> Senior Full-Stack Engineer  
+> and Data Scientist
 
 ::: {.grid .d-block .d-md-grid}
 
