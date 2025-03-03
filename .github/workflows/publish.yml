@@ -1,9 +1,9 @@
+name: Quarto Publish
+
 on:
   workflow_dispatch:
   push:
     branches: production
-
-name: Quarto Publish
 
 jobs:
   build-deploy:
