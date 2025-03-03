@@ -1,15 +1,5 @@
 [
   {
-    "listing": "/articles/index.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/index.html",
-    "items": [
-      "/posts/80bacc68-054f-4ecf-958a-ce404eb4c8ff/index.html"
-    ]
-  },
-  {
     "listing": "/achievements/index.html",
     "items": []
   },
@@ -18,6 +8,16 @@
     "items": [
       "/posts/80bacc68-054f-4ecf-958a-ce404eb4c8ff/index.html"
     ]
+  },
+  {
+    "listing": "/posts/index.html",
+    "items": [
+      "/posts/80bacc68-054f-4ecf-958a-ce404eb4c8ff/index.html"
+    ]
+  },
+  {
+    "listing": "/articles/index.html",
+    "items": []
   },
   {
     "listing": "/projects/index.html",
