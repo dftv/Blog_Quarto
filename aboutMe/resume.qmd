@@ -226,6 +226,7 @@ educationWidget(
 ::: {.grid}
 
 ::: {.column}
+- AWS
 - Flutter
 - React
 - React Native
@@ -243,6 +244,21 @@ educationWidget(
 - Shiny
 - Oxygen.jl
 - Jupyter
+:::
+
+:::
+
+---
+
+### Game Engines
+
+::: {.grid}
+
+::: {.column}
+
+- Unity
+- Godot
+
 :::
 
 :::

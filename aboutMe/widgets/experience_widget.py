@@ -11,7 +11,10 @@ def calculateMonths(startDate: date, endDate: date) -> str:
         endDate.month - startDate.month + 1
     )
 
-    years, months = divmod(totalMonths, 12)
+    years, months = divmod(
+        totalMonths,
+        12,
+    )
 
     return f"{years} years and {months} months" if years > 0 else f"{months} months"
 
@@ -20,12 +23,13 @@ def generateTitle(experience: ExperienceSchema) -> str:
     firstPosition: PositionSchema = experience.positions[0]
 
     totalTime: str = calculateMonths(
-        experience.positions[-1].startDate, experience.positions[0].endDate
+        experience.positions[-1].startDate,
+        experience.positions[0].endDate,
     )
 
     return (
         f"""> ##### **{experience.company}**  \n"""
-        f"> {firstPosition.employmentType.value} · {totalTime}  \n"
+        f"> {firstPosition.employmentType.value}{f" · {totalTime}" if not firstPosition.present else ""}  \n"
         f"> {firstPosition.location} · {firstPosition.locationType.value} \n"
         "> \n"
     )
@@ -38,14 +42,17 @@ def formatPositions(experience: ExperienceSchema) -> str:
 
     if len(positions) > 1:
         for position in positions:
-            time: str = calculateMonths(position.startDate, position.endDate)
+            time: str = calculateMonths(
+                position.startDate,
+                position.endDate,
+            )
 
             startDateFormatted: str = position.startDate.strftime("%B %Y")
             endDateFormatted: str = position.endDate.strftime("%B %Y")
 
             response += (
                 f"> > **{position.title}**  \n"
-                f"> > {startDateFormatted} - {"Present" if position.present else endDateFormatted} · {time}  \n"
+                f"> > {startDateFormatted} - {"Present" if position.present else endDateFormatted}{f" · {time}" if not position.present else ""}  \n"
                 "> \n"
             )
 
@@ -53,7 +60,10 @@ def formatPositions(experience: ExperienceSchema) -> str:
 
     position: PositionSchema = positions[0]
 
-    time: str = calculateMonths(position.startDate, position.endDate)
+    time: str = calculateMonths(
+        position.startDate,
+        position.endDate,
+    )
 
     startDateFormatted: str = position.startDate.strftime("%B %Y")
     endDateFormatted: str = position.endDate.strftime("%B %Y")
