@@ -1,0 +1,58 @@
+---
+title: "Animated Layout with Shiny: Bringing your interface to life"
+subtitle: "“Está vivo!” — Frankenstein, 1931 <br> Como transformar interfaces estáticas em experiências visuais dinâmicas com Shiny para R e Python"
+description: "Este post explora como implementar animações em interfaces Shiny, tanto em R quanto em Python, sem abrir mão da interatividade e responsividade, e com foco na facilidade de personalização. Uma abordagem visual para trazer mais expressividade e fluidez às suas aplicações."
+
+date: "05/16/2025"
+
+categories:
+  - UI/UX Design
+  - Shiny
+  - Python
+  - R
+  - JavaScript
+
+draft: false
+
+format:
+  html:
+    include-after-body: "../../utils/sync_tabs.html"
+
+---
+
+## Código em diferentes linguagens 1
+
+::: {.panel-tabset}
+
+### Python
+
+```python
+print("Hello, World! This is a Python code block. 01")
+```
+
+### R
+
+```r
+print("Hello, World! This is an R code block. 01")
+```
+
+:::
+
+:::{.column-body}
+<script src="https://giscus.app/client.js"
+        data-repo="dftv/blog_quarto"
+        data-repo-id="R_kgDONv_J5g"
+        data-category="Posts"
+        data-mapping="number"
+        data-term="3"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+:::

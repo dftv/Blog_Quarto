@@ -1,0 +1,23 @@
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const allTabs = document.querySelectorAll(".nav.nav-tabs");
+
+    allTabs.forEach((tabList) => {
+      const tabs = tabList.querySelectorAll("button, a");
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", (e) => {
+          const selectedTabText = e.target.textContent.trim();
+
+          document.querySelectorAll(".nav.nav-tabs").forEach((otherTabList) => {
+            otherTabList.querySelectorAll("button, a").forEach((otherTab) => {
+              if (otherTab.textContent.trim() === selectedTabText) {
+                otherTab.click();
+              }
+            });
+          });
+        });
+      });
+    });
+  });
+</script>
