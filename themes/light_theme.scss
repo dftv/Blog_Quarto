@@ -147,7 +147,7 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,10
 }
 
 .listing-category {
-  font-weight: 500;
+  font-weight: $font-weight;
   color: $dark !important;
 }
 
@@ -155,7 +155,7 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,10
   color: $dark !important;
 
   & a {
-    font-weight: 500;
+    font-weight: $font-weight;
   }
 }
 
@@ -179,4 +179,19 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,10
 
 .navbar .quarto-navbar-tools .quarto-navigation-tool:hover {
   color: $favorite;
+}
+
+.panel-tabset {
+  .nav-tabs {
+    .nav-item {
+      .nav-link {
+        color: $dark;
+      }
+
+      .nav-link.active {
+        color: $dark;
+        font-weight: 600;
+      }
+    }
+  }
 }
