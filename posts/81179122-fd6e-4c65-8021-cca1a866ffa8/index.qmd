@@ -1,12 +1,12 @@
 ---
 title: "Animated Layout with Shiny: Bringing your interface to life"
 subtitle: "“Está vivo!” — Frankenstein, 1931 <br> Como transformar interfaces estáticas em experiências visuais dinâmicas com Shiny para R e Python"
-description: "Este post explora como implementar animações em interfaces Shiny, tanto em R quanto em Python, sem abrir mão da interatividade e responsividade, e com foco na facilidade de personalização. Uma abordagem visual para trazer mais expressividade e fluidez às suas aplicações."
+description: "Este post explora uma maneira modular de implementar animações em interfaces Shiny, tanto em R quanto em Python, sem abrir mão da interatividade e responsividade. Uma abordagem visual para trazer mais expressividade e fluidez às suas aplicações."
 
 date: "05/16/2025"
 
 categories:
-  - UI/UX Design
+  - User Experience Design
   - Shiny
   - Python
   - R
@@ -20,23 +20,47 @@ format:
 
 ---
 
-## Código em diferentes linguagens 1
+A entrega de interfaces em Shiny não necessariamente precisam ser acompanhadas de uma visualização de dados estática e desinteressante, toda boa interface canaliza o usuário a uma historia pré-definida a ser contada[^1], tanto para que seja intuitiva e complementar em uma tomada de decisão quanto para que seja agradável e fluido de se utilizar.
 
-::: {.panel-tabset}
+Acredito que, com este contemporâneo e rápido avanço na acessibilidade de frameworks que possibilitam a criação "facilitada" de interfaces[^2] e a consequente aproximação dos "desenvolvedores gerais"[^3] com os usuários finais, é plausível e justificável o crescente deficit em aplicações de conceitos de UX[^4] em sua minima expressão.
 
-### Python
+Venho por meio deste compartilhar um método que desenvolvi em projetos recentes, que visa de maneira simples e direta trazer um pouco dessa expressividade.
+
+::: {.callout-note}
+## Nota
+
+Este post apresenta uma das inúmeras possibilidades de implementação de animações em layouts Shiny. Podendo ser replicado e adaptado para diferentes contextos e necessidades, tal como também pode não ser a melhor solução para todos os casos.
+:::
+
+<!-- ::: {.panel-tabset}
+
+# Python
 
 ```python
 print("Hello, World! This is a Python code block. 01")
 ```
 
-### R
+# R
 
 ```r
 print("Hello, World! This is an R code block. 01")
 ```
 
+::: -->
+
+::: {.callout-note}
+## Nota
+
+A escolha da apresentação deste conteúdo através de um projeto simples reflete a intenção de fomentar a criatividade e a exploração das possibilidades diversas dessa abordagem.
 :::
+
+\newpage
+\theendnotes
+
+[^1]: A termologia adequada a este estudo é storytelling, que em minha percepção é uma subárea do design de experiência do usuário.
+[^2]: Like Shiny, Quarto, Dash, etc.
+[^3]: Desenvolvedores não especializados em design de interação, mas que possuem conhecimento técnico suficiente para criar interfaces funcionais.
+[^4]: User Experience ...
 
 :::{.column-body}
 <script src="https://giscus.app/client.js"
