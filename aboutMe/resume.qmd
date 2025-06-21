@@ -180,7 +180,7 @@ educationWidget(
 educationWidget(
     EducationSchema(
         degree="Technical Degree in Systems Development",
-        institution="Peruíbe State Technical School (ETEC)",
+        institution="Escola Técnica Estadual de Peruíbe (ETEC)",
         startDate=date(2019, 1, 1),
         endDate=date(2021, 12, 1),
     )
