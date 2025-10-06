@@ -13,7 +13,7 @@ def noticeWidget() -> HTML:
           </div>
         </div>
         <div class="callout-body-container callout-body">
-          <p>This blog is a work in progress. Follow me on <a href="https://www.linkedin.com/in/df-danielfilho/" target="_blank" data-original-href="https://www.linkedin.com/in/df-danielfilho/">LinkedIn</a> for updates.</p>
+          <p>This blog is a work in progress. Follow me on <a href="https://www.linkedin.com/in/danieltorquatof/" target="_blank" data-original-href="https://www.linkedin.com/in/danieltorquatof/">LinkedIn</a> for updates.</p>
         </div>
       </div>
     """
