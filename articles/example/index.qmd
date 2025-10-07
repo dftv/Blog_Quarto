@@ -13,7 +13,7 @@ Article example
 
 :::{.column-body}
 <script src="https://giscus.app/client.js"
-        data-repo="dftv/blog_quarto"
+        data-repo="danieltorquatof/blog_quarto"
         data-repo-id="R_kgDONv_J5g"
         data-category="Articles"
         data-mapping="number"

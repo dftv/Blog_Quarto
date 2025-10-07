@@ -1,5 +1,5 @@
 ---
-title: "DF's Blog"
+title: "DT's Blog"
 description: "Welcome to my personal blog!"
 
 jupyter: python3

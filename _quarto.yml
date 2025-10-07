@@ -4,10 +4,10 @@ project:
   output-dir: _site
 
 website:
-  title: "DF's Blog"
+  title: "DT's Blog"
   description: "Blog pessoal"
 
-  site-url: https://blog.dftv.spikeystudio.com/
+  site-url: https://blog.danieltorquatof.spikeystudio.com/
 
   open-graph: true
   cookie-consent: false
@@ -43,7 +43,7 @@ website:
         href: https://www.linkedin.com/in/danieltorquatof/
         target: _blank
       - icon: github
-        href: https://github.com/dftv
+        href: https://github.com/danieltorquatof
         target: _blank
       - icon: rss
         href: index.xml
