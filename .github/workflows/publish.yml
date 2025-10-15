@@ -3,27 +3,28 @@ name: Quarto Publish
 on:
   workflow_dispatch:
   push:
-    branches: production
+    branches:
+      - production
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    
+
+    container:
+      image: ghcr.io/quarto-dev/quarto:latest
+
     permissions:
       contents: write
-      
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
       - name: Set environment variables
-        run: echo "QUARTO_CHROMIUM_HEADLESS_MODE=new" >> $GITHUB_ENV
-
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-
-      - name: Install Quarto Dependencies
-        run: quarto install tinytex
+        run: |
+          echo "QUARTO_CHROMIUM_HEADLESS_MODE=new" >> $GITHUB_ENV
+          echo "QUARTO_LOG_LEVEL=DEBUG" >> $GITHUB_ENV
+          echo "QUARTO_ENGINES_PYTHON_TIMEOUT=300" >> $GITHUB_ENV
 
       - name: Install Python
         uses: actions/setup-python@v5
@@ -34,26 +35,46 @@ jobs:
       - name: Install Poetry
         uses: abatilo/actions-poetry@v4
 
-      - name: Setup a local virtual environment
+      - name: Setup local virtual environment
         run: |
           poetry config virtualenvs.create true --local
           poetry config virtualenvs.in-project true --local
 
-      - name: Define a cache for the virtual environment based on the dependencies lock file
+      - name: Cache Python virtualenv
         uses: actions/cache@v3
         with:
           path: ./.venv
           key: venv-${{ hashFiles('poetry.lock') }}
 
       - name: Install Python Dependencies with Poetry
-        run: poetry install
+        run: poetry install --no-interaction --no-root
 
       - name: Ensure Poetry Virtual Environment is Used
         run: echo "$(poetry env info --path)/bin" >> $GITHUB_PATH
 
-      - name: Render and Publish
+      - name: Cache TinyTeX
+        uses: actions/cache@v3
+        with:
+          path: ~/.TinyTeX
+          key: ${{ runner.os }}-tinytex
+
+      - name: Install TinyTeX (if missing)
+        run: quarto install tinytex --no-prompt || true
+
+      - name: Ensure basic TeX packages are installed
+        run: |
+          tlmgr install babel babel-portuguese fontspec csquotes geometry \
+                        xcolor fancyhdr titlesec hyperref natbib amsmath
+
+      - name: Render Quarto project
+        run: |
+          echo "Rendering project..."
+          quarto render --log-level debug
+
+      - name: Publish rendered site
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
+          path: _site
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

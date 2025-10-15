@@ -13,3 +13,4 @@ site_libs/
 
 # Python files
 __pycache__/
+**/*.quarto_ipynb
