@@ -26,8 +26,11 @@ jobs:
           echo "QUARTO_LOG_LEVEL=DEBUG" >> $GITHUB_ENV
           echo "QUARTO_ENGINES_PYTHON_TIMEOUT=300" >> $GITHUB_ENV
 
-      - name: Check Python version
-        run: python3 --version
+      - name: Install Python 3.12
+        run: |
+          apt-get update
+          apt-get install -y python3.12 python3.12-venv python3.12-distutils python3-pip
+          python3.12 --version
 
       - name: Install Poetry
         uses: abatilo/actions-poetry@v4
@@ -48,6 +51,9 @@ jobs:
 
       - name: Ensure Poetry Virtual Environment is Used
         run: echo "$(poetry env info --path)/bin" >> $GITHUB_PATH
+
+      - name: Verify Python
+        run: python --version
 
       - name: Cache TinyTeX
         uses: actions/cache@v3
