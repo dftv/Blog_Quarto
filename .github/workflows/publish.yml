@@ -10,9 +10,6 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
 
-    container:
-      image: ghcr.io/quarto-dev/quarto:latest
-
     permissions:
       contents: write
 
@@ -21,39 +18,13 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set environment variables
-        run: |
-          echo "QUARTO_CHROMIUM_HEADLESS_MODE=new" >> $GITHUB_ENV
-          echo "QUARTO_LOG_LEVEL=DEBUG" >> $GITHUB_ENV
-          echo "QUARTO_ENGINES_PYTHON_TIMEOUT=300" >> $GITHUB_ENV
+        run: echo "QUARTO_CHROMIUM_HEADLESS_MODE=new" >> $GITHUB_ENV
 
-      - name: Install Python 3.12
-        run: |
-          apt-get update
-          apt-get install -y python3.12 python3.12-venv python3.12-distutils python3-pip
-          python3.12 --version
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Install Poetry
-        uses: abatilo/actions-poetry@v4
-
-      - name: Setup local virtual environment
-        run: |
-          poetry config virtualenvs.create true --local
-          poetry config virtualenvs.in-project true --local
-
-      - name: Cache Python virtualenv
-        uses: actions/cache@v3
-        with:
-          path: ./.venv
-          key: venv-${{ hashFiles('poetry.lock') }}
-
-      - name: Install Python Dependencies with Poetry
-        run: poetry install --no-interaction --no-root
-
-      - name: Ensure Poetry Virtual Environment is Used
-        run: echo "$(poetry env info --path)/bin" >> $GITHUB_PATH
-
-      - name: Verify Python
-        run: python --version
+      - name: Install Quarto Dependencies
+        run: quarto install tinytex --no-prompt
 
       - name: Cache TinyTeX
         uses: actions/cache@v3
@@ -61,23 +32,38 @@ jobs:
           path: ~/.TinyTeX
           key: ${{ runner.os }}-tinytex
 
-      - name: Install TinyTeX (if missing)
-        run: quarto install tinytex --no-prompt || true
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
 
-      - name: Ensure basic TeX packages are installed
+      - name: Install Poetry
+        uses: abatilo/actions-poetry@v4
+
+      - name: Setup a local virtual environment
         run: |
-          tlmgr install babel babel-portuguese fontspec csquotes geometry \
-                        xcolor fancyhdr titlesec hyperref natbib amsmath
+          poetry config virtualenvs.create true --local
+          poetry config virtualenvs.in-project true --local
 
-      - name: Render Quarto project
-        run: |
-          echo "Rendering project..."
-          quarto render --log-level debug
+      - name: Define a cache for the virtual environment based on the dependencies lock file
+        uses: actions/cache@v3
+        with:
+          path: ./.venv
+          key: venv-${{ hashFiles('poetry.lock') }}
 
-      - name: Publish rendered site
+      - name: Install Python Dependencies with Poetry
+        run: poetry install
+
+      - name: Ensure Poetry Virtual Environment is Used
+        run: echo "$(poetry env info --path)/bin" >> $GITHUB_PATH
+
+      - name: Render site
+        run: quarto render --log-level debug
+
+      - name: Publish site
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
-          path: _site
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
