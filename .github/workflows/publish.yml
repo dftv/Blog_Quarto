@@ -26,11 +26,8 @@ jobs:
           echo "QUARTO_LOG_LEVEL=DEBUG" >> $GITHUB_ENV
           echo "QUARTO_ENGINES_PYTHON_TIMEOUT=300" >> $GITHUB_ENV
 
-      - name: Install Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-          cache: "pip"
+      - name: Check Python version
+        run: python3 --version
 
       - name: Install Poetry
         uses: abatilo/actions-poetry@v4
