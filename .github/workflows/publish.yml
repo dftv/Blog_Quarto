@@ -18,19 +18,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set environment variables
-        run: echo "QUARTO_CHROMIUM_HEADLESS_MODE=1" >> $GITHUB_ENV
+        run: echo "QUARTO_CHROMIUM_HEADLESS_MODE=new" >> $GITHUB_ENV
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-
-      - name: Install Quarto Dependencies
-        run: quarto install tinytex --no-prompt
-
-      - name: Cache TinyTeX
-        uses: actions/cache@v3
-        with:
-          path: ~/.TinyTeX
-          key: ${{ runner.os }}-tinytex
 
       - name: Install Python
         uses: actions/setup-python@v5

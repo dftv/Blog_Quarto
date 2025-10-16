@@ -14,17 +14,6 @@ categories:
 bibliography: bibliography.bib
 
 draft: false
-
-format:
-  html: default
-  pdf:
-    keep-tex: true
-    number-sections: true
-    cite-method: natbib
-    include-in-header:
-      text: |
-        \usepackage{endnotes}
-        \let\footnote=\endnote
 ---
 
 It's pretty easy to keep a team organized with a well-defined workflow, right?
