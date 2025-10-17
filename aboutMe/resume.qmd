@@ -5,7 +5,7 @@ description: Research & Development Engineer
 jupyter: python3
 ---
 
-> Full-Stack Engineer Data Scientist
+> Full-Stack Engineer and Data Scientist
 
 ::: {.grid .d-block .d-md-grid}
 
