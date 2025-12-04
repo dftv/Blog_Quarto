@@ -1,5 +1,5 @@
 ---
-title: Daniel R. T. Filho
+title: Daniel Torquato
 description: Research & Development Engineer
 
 jupyter: python3
@@ -38,7 +38,7 @@ experienceWidget(
             PositionSchema(
                 title="Senior Full-Stack Developer and Data Scientist",
                 startDate=date(2025, 1, 1),
-                present=True,
+                endDate=date(2025, 11, 1),
                 location="Piracicaba, São Paulo, Brazil",
                 employmentType=EmploymentType.FULL_TIME,
                 locationType=LocationType.HYBRID,

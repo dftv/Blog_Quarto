@@ -16,6 +16,8 @@ bibliography: bibliography.bib
 draft: false
 ---
 
+---
+
 It's pretty easy to keep a team organized with a well-defined workflow, right?
 
 But if you want to showcase your incompetence or simply watch everything go up in flames, this post is for you!

@@ -1,0 +1,370 @@
+---
+title: "Designing Reliable Automation Pipelines for Persistent Game Worlds"
+subtitle: "A practical exploration of reasoning, architecture and stable backup mechanisms"
+description: "This post presents the reasoning process and technical decisions that led to the creation of a reliable backup and automation workflow for persistent game servers, including a real use case related to maintaining stable Minecraft sessions at home."
+
+date: "12/04/2025"
+
+categories:
+  - DevOps
+  - Automation
+  - Infrastructure
+  - Systems Design
+  - Reliability Engineering
+
+draft: false
+---
+
+---
+
+## Reference Implementation
+
+The complete implementation described throughout this post is publicly available in the following repository:
+
+**GitHub Repository**  
+[danieltorquatof/MinecraftBackup_Docker](https://github.com/danieltorquatof/MinecraftBackup_Docker)
+
+The project contains the full set of scripts, Docker definitions and utility functions that support the automation flow presented above. Reviewing the code directly in the repository can help contextualise the behaviour of each component and illustrate how the pieces integrate in practice.
+
+---
+
+## Key Code Excerpts
+
+Although the full implementation is available in the repository, a few excerpts help illustrate the mechanics behind the automation layer. The example below shows how the autosave routine delegates world persistence to a dedicated function and then commits the updated data to Git.
+
+### scripts/autosave.sh
+
+```bash
+#!/bin/bash
+set -e
+
+source /usr/local/bin/log.sh
+source /usr/local/bin/saveWorld.sh
+
+LOG_DIR="/var/log/mc-scripts"
+LOG_FILE="$LOG_DIR/autosave.log"
+
+REPO_DIR="/data/$REPO_NAME"
+
+REPO_URL="https://$GITHUB_TOKEN@github.com/$GITHUB_USER/$REPO_NAME.git"
+
+log "AUTOSAVE" "Starting execution..."
+
+git config --global --add safe.directory "$REPO_DIR"
+git config --global init.defaultBranch main
+
+if [ ! -d "$REPO_DIR/.git" ]; then
+    log "AUTOSAVE" "Repository not created. Initializing new repo at $REPO_DIR..."
+
+    git -C "$REPO_DIR" init
+
+    log "AUTOSAVE" "Adding remote origin: $REPO_URL"
+    
+    git -C "$REPO_DIR" remote add origin "$REPO_URL"
+fi
+
+saveWorld "AUTOSAVE"
+
+log "AUTOSAVE" "Execution completed."
+```
+
+### utils/saveWorld.sh
+
+```bash
+#!/bin/bash
+
+source /usr/local/bin/log.sh
+
+RCON_HOST="localhost"
+RCON_PORT=${RCON_PORT:-25575}
+RCON_PASS=$RCON_PASSWORD
+
+saveWorld() {
+  local PREFIX="$1"
+
+  local UTC_NOW="$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
+  local COMMIT_MSG="$UTC_NOW - $PREFIX"
+
+  rcon-cli 'tellraw @a {"text":"📂 Backup started!","color":"gold"}'
+
+  sleep 2
+
+  rcon-cli "save-all"
+
+  sleep 2
+
+  log $PREFIX "World successfully saved."
+
+  git -C "$REPO_DIR" add .
+  git -C "$REPO_DIR" commit -m "$COMMIT_MSG" || log "AUTOSAVE" "Nothing to commit"
+
+  if ! git -C "$REPO_DIR" push; then
+      log $PREFIX "Upstream not set. Setting upstream and retrying push..."
+
+      git -C "$REPO_DIR" push -u origin main
+  fi
+
+  log $PREFIX "Autosave successfully deployed."
+
+  rcon-cli 'tellraw @a {"text":"📁 Backup completed!","color":"green"}'
+}
+```
+
+These sections illustrate the predictable structure that supports periodic and manual world preservation. The underlying model is intentionally minimalistic so the logic remains transparent and easy to debug.
+
+---
+
+Persistent digital environments demand predictable behaviour. Whether managing corporate infrastructure or personal projects, stability depends on systems that continue to operate even when attention shifts elsewhere. Over time I realised that reliable automation is not only relevant in professional settings. It can also solve surprisingly ordinary problems.
+
+A practical example emerged in my own home. My partner and I often play Minecraft together and our sessions sometimes last several hours. Anyone who has hosted a local or containerised server knows that crashes or unexpected shutdowns can corrupt the world or erase progress. After losing entire builds on more than one occasion I started thinking seriously about how to design a stable and automatic backup mechanism that would remove the risk altogether.
+
+This line of thinking eventually led to a full architecture that integrates Docker, Git and GitHub for continuous world versioning. Although this post uses that implementation as a reference, the focus here is the reasoning that guides the creation of automation pipelines that are reliable, observable and resilient.
+
+---
+
+## Designing the Automation Flow
+
+Before exploring each script it is useful to visualise how the overall workflow operates. The intention was to create a loop that could run indefinitely, independent of the user's attention.
+
+```{mermaid}
+%%| fig-align: center
+%%| fig-width: 100%
+flowchart TB;
+  A[Container starts]
+  B[Initialisation script]
+  C{Repository exists?}
+  D[Clone or update repository]
+  E[Prepare empty repository]
+  F[Start Minecraft server]
+  G[Periodic loop starts]
+  H[Autosave script executes every N minutes]
+  I[saveWorld.sh]
+  J[Git add and commit]
+  K[Push to GitHub]
+  L[Container receives stop signal]
+  M[Shutdown script]
+
+  A --> B
+  B --> C
+
+  C -- Yes --> D
+  C -- No --> E
+
+  D --> F
+  E --> F
+
+  F --> G
+  G --> H
+
+  H --> I
+  I --> J
+  J --> K
+
+  F --> L
+  L --> M
+  M --> I
+```
+
+This diagram reflects the core concept. Every event leads to a deterministic and observable action. World data is always saved, always committed and always pushed.
+
+---
+
+## Understanding the File Structure
+
+The project uses a modular structure that separates concerns and creates predictable behaviours. Each file contributes uniquely to the automation pipeline.
+
+```bash
+.
+├── docker-compose.yml
+├── Dockerfile
+├── entrypoint.sh
+├── .env.example
+├── .gitignore
+├── README.md
+├── scripts
+│   ├── autosave.sh
+│   ├── init.sh
+│   ├── shutdown.sh
+├── utils
+│   ├── log.sh
+│   ├── saveWorld.sh
+```
+
+Each one will be explained individually so the full picture becomes clear.
+
+---
+
+## Container and Image Definitions
+
+### docker-compose.yml
+
+Defines how the server is launched. It handles:
+
+* Port exposure for gameplay and RCON access;
+* Environment variable loading;
+* Persistence of the Minecraft world and logs;
+* Building the custom image from the local Dockerfile.
+
+Its purpose is to maintain stability across restarts and ensure that all automation scripts remain present inside the container.
+
+---
+
+### Dockerfile
+
+The Dockerfile extends the "official" image `itzg/minecraft-server:java21` then introduces all custom scripts. This combination provides the reliability of a well maintained base image while enabling custom behaviour controlled entirely by our own entrypoint.
+
+```{mermaid}
+%%| fig-align: center
+%%| fig-width: 100%
+flowchart LR;
+  A["&quot;Official&quot; Minecraft Server Image"]
+  B[Import custom scripts]
+  C[Add entrypoint logic]
+  D[Build customised backup capable image]
+
+  A --> B
+  B --> C
+  C --> D
+```
+
+This duality of stability and customisation supports the idea of predictable infrastructure that can also adapt to specific needs.
+
+---
+
+## Core Execution Orchestrator
+
+### entrypoint.sh
+
+This script coordinates the lifecycle of the server and backup system.
+
+It performs:
+
+1. Initialisation;
+2. Startup synchronisation;
+3. Launch of the periodic autosave loop;
+4. Delegation to the official Minecraft server start script;
+5. Graceful shutdown and final backup.
+
+A second diagram helps illustrate this behaviour.
+
+```{mermaid}
+%%| fig-align: center
+%%| fig-width: 100%
+flowchart TB;
+  A[entrypoint.sh starts]
+  B[Run init.sh]
+  C[Configure and sync repository]
+  D[Start autosave loop in background]
+  E[Begin Minecraft server]
+  F{Stop signal received?}
+  G[Run shutdown.sh]
+  H[Final save and push]
+
+  A --> B
+  B --> C
+  C --> D
+  D --> E
+  E --> F
+  F -- Yes --> G
+  G --> H
+  F -- No --> E
+```
+
+This flow ensures that no world data is lost, regardless of how the container stops.
+
+---
+
+## Utility Layers
+
+### utils/log.sh
+
+A lightweight logger that standardises how each script communicates events. Every log entry includes a timestamp and prefix. This improves verification and troubleshooting. Logs are written to persistent storage so they survive container recreation.
+
+---
+
+### utils/saveWorld.sh
+
+The most responsibilities in the automation pipeline concentrate here. It performs:
+
+* In game world save via RCON
+* Git staging and committing
+* Push synchronisation with GitHub
+* Messaging for both users and logs
+
+It represents the core reliability mechanism. If this script functions correctly, every world state becomes recoverable.
+
+---
+
+## Lifecycle Scripts
+
+### scripts/init.sh
+
+Executed only during startup. It validates the remote repository, checks whether it exists and whether it is empty. It clones or prepares the repository so the world directory becomes fully managed by Git. This step prevents drift between the running server and the stored history.
+
+---
+
+### scripts/autosave.sh
+
+Runs periodically based on the interval defined in the environment variables. It configures Git, initialises a new repository if needed and calls `saveWorld.sh`. These periodic commits create a complete backup timeline.
+
+---
+
+### scripts/shutdown.sh
+
+Triggered on termination of the container. It immediately calls `saveWorld.sh` so the final server state is stored safely. This prevents data corruption and makes the server restart friendly regardless of how the container was stopped.
+
+---
+
+## Environment Templates and Management
+
+### .env.example
+
+Guides the user in defining:
+
+* GitHub repository credentials
+* Minecraft server settings
+* RCON access
+* Backup intervals
+* Metadata for commits
+
+This separation of configuration strengthens clarity and reduces accidental misconfiguration.
+
+---
+
+# Why This Matters
+
+Although the technical implementation is interesting, the motivation emerged from a real problem. Playing Minecraft with my partner is one of our favourite activities and losing progress due to corruption or abrupt shutdowns was frustrating. Manual backups were easy to forget and relying on memory alone was not sustainable.
+
+Creating an infrastructure that handles backups automatically removed the cognitive load entirely. It also ensured that every session became safe. The system evolved from a personal inconvenience into an elegant example of how automation thinking can improve both professional and personal digital environments.
+
+This project demonstrates that reliable systems do not appear spontaneously. They are built through reasoning, testing and iteration. Whether used for game worlds, business processes or experimental environments, the principles remain consistent: predictable automation, clear observability and robust fallback mechanisms.
+
+---
+
+# Final Considerations
+
+Constructing automation flows like this establishes a foundation for trust in any persistent system. Once the structure works without supervision, users are free to focus on the experience rather than maintenance. In my case it allowed long sessions of building and exploration with my partner to continue without disruption.
+
+I hope this explanation clarifies not only what the system does, but also how it was structured and why the reasoning behind it led to a reliable design.
+
+---
+
+:::{.column-body}
+<script src="https://giscus.app/client.js"
+        data-repo="danieltorquatof/blog_quarto"
+        data-repo-id="R_kgDONv_J5g"
+        data-category="Posts"
+        data-mapping="number"
+        data-term="40"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+:::
+
