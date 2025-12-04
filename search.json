@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "aboutMe/resume.html",
+    "href": "aboutMe/resume.html",
+    "title": "Daniel Torquato",
+    "section": "",
+    "text": "Full-Stack Engineer and Data Scientist\n\n\n\n\nOverview\nResearch & Development Engineer with experience in software development, data science, and machine learning. As a Senior Full-Stack Engineer, I integrate Front-End and Back-End technologies to develop innovative and efficient solutions. Passionate about data-driven insights and AI, I continuously seek to enhance systems through research, optimization, and cutting-edge technology.\n\n\n\nExperience\n\n\n\nArgus Solutions\nFull-time · 1 years and 5 months\nPiracicaba, São Paulo, Brazil · Hybrid\n\nSenior Full-Stack Developer and Data Scientist\nJanuary 2025 - November 2025 · 11 months\n\n\nSenior Full-Stack Developer\nJuly 2024 - January 2025 · 7 months\n\n\n\n\n\n\n\nPleno Full-stack Developer\nGuild Market\nJune 2024 - July 2024 · 2 months\nMacaé, Rio de Janeiro, Brazil · Remote\n\n\n\n\n\n\nPleno Mobile Developer and Junior 3D Modeler\nWoodyverso\nOctober 2022 - February 2023 · 5 months\nMacaé, Rio de Janeiro, Brazil · Remote\n\n\n\n\n\n\nEMARTIM\nFull-time · 1 years and 10 months\nPiracicaba, São Paulo, Brazil · Remote\n\nJunior Full-stack and Mobile Developer\nDecember 2022 - March 2024 · 1 years and 4 months\n\n\nJunior Mobile Developer\nJune 2022 - December 2022 · 7 months\n\n\n\n\n\n\n\nIntern Front-End Developer\nGBM Tech & Control\nFebruary 2022 - May 2022 · 4 months\nSantos, São Paulo, Brazil · Hybrid\n\n\n\n\n\n\n\n\n\n\nEducation\n\n\n\nBachelor of Engineering in Mechatronics\n\nUnicesumar,\nMay 2024 - Current\n\n\n\n\n\n\n\nAssociate Degree in Internet Systems\n\nUnicesumar,\nJuly 2022 - July 2024\n\n\n\n\n\n\n\nTechnical Degree in Systems Development\n\nEscola Técnica Estadual de Peruíbe (ETEC),\nJanuary 2019 - December 2021\n\n\n\n\n\nAnd more: Licenses and certificates\n\n\nSee also my Skills\n\n\n\n\nMain Languages\n\n\n\nPython\nJulia\nR\nDart\nC#\nPHP\nSQL\n\n\n\n\nNoSQL\nKotlin\nJava\nJavaScript\nTypeScript\nHTML\nCSS\n\n\n\n\n\n\nSome Frameworks and Technologies\n\n\n\nAWS\nFlutter\nReact\nReact Native\nExpress.js\nCodeIgniter\nFastAPI\nASP.NET\n\n\n\n\nMySQL\nMariaDB\nMongoDB\nNode.js\nShiny\nOxygen.jl\nJupyter\n\n\n\n\n\n\nGame Engines\n\n\n\nUnity\nGodot"
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "Posts",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n\n\n\n\n\n\n\n\n\n\nDesigning Reliable Automation Pipelines for Persistent Game Worlds\n\n\n\nDevOps\n\nAutomation\n\nInfrastructure\n\nSystems Design\n\nReliability Engineering\n\n\n\nThis post presents the reasoning process and technical decisions that led to the creation of a reliable backup and automation workflow for persistent game servers, including a real use case related to maintaining stable Minecraft sessions at home.\n\n\n\n\n\nDecember 4, 2025\n\n8 min\n\n\n\n\n\n\n\n\n\n\n\nStep by step guide on how to ruin your company and your team with AI\n\n\n\nBehavioral Analysis\n\nArtificial Intelligence\n\nEthics\n\nManagement\n\n\n\nThis post aims to apply psychology concepts to address a sensitive topic for those who are limited by the use of generative artificial intelligence tools in the professional environment, acting as a direct attack on the intellect, raising questions and seeking plausible solutions.\n\n\n\n\n\nFebruary 12, 2025\n\n7 min\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "projects/index.html",
     "href": "projects/index.html",
     "title": "Projects",
@@ -18,7 +32,70 @@
     "href": "index.html#feed",
     "title": "DT’s Blog",
     "section": "Feed",
-    "text": "Feed\n\nThis is a feed of my latest posts, projects, articles, and achievements.\n\n\n\n\n\n\n\n\n\n\n\nStep by step guide on how to ruin your company and your team with AI\n\n\nA roadmap to the quickest way to lose your team’s trust\n\n\n\nBehavioral Analysis\n\nArtificial Intelligence\n\nEthics\n\nManagement\n\n\n\nThis post aims to apply psychology concepts to address a sensitive topic for those who are limited by the use of generative artificial intelligence tools in the professional environment, acting as a direct attack on the intellect, raising questions and seeking plausible solutions.\n\n\n\n\n\nFebruary 12, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Feed\n\nThis is a feed of my latest posts, projects, articles, and achievements.\n\n\n\n\n\n\n\n\n\n\n\nDesigning Reliable Automation Pipelines for Persistent Game Worlds\n\n\nA practical exploration of reasoning, architecture and stable backup mechanisms\n\n\n\nDevOps\n\nAutomation\n\nInfrastructure\n\nSystems Design\n\nReliability Engineering\n\n\n\nThis post presents the reasoning process and technical decisions that led to the creation of a reliable backup and automation workflow for persistent game servers, including a real use case related to maintaining stable Minecraft sessions at home.\n\n\n\n\n\nDecember 4, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nStep by step guide on how to ruin your company and your team with AI\n\n\nA roadmap to the quickest way to lose your team’s trust\n\n\n\nBehavioral Analysis\n\nArtificial Intelligence\n\nEthics\n\nManagement\n\n\n\nThis post aims to apply psychology concepts to address a sensitive topic for those who are limited by the use of generative artificial intelligence tools in the professional environment, acting as a direct attack on the intellect, raising questions and seeking plausible solutions.\n\n\n\n\n\nFebruary 12, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/272f6b74-e11a-4ade-a717-0e037d062c7c/index.html#reference-implementation",
+    "href": "posts/272f6b74-e11a-4ade-a717-0e037d062c7c/index.html#reference-implementation",
+    "title": "Designing Reliable Automation Pipelines for Persistent Game Worlds",
+    "section": "Reference Implementation",
+    "text": "Reference Implementation\nThe complete implementation described throughout this post is publicly available in the following repository:\nGitHub Repository\ndanieltorquatof/MinecraftBackup_Docker\nThe project contains the full set of scripts, Docker definitions and utility functions that support the automation flow presented above. Reviewing the code directly in the repository can help contextualise the behaviour of each component and illustrate how the pieces integrate in practice."
+  },
+  {
+    "objectID": "posts/272f6b74-e11a-4ade-a717-0e037d062c7c/index.html#key-code-excerpts",
+    "href": "posts/272f6b74-e11a-4ade-a717-0e037d062c7c/index.html#key-code-excerpts",
+    "title": "Designing Reliable Automation Pipelines for Persistent Game Worlds",
+    "section": "Key Code Excerpts",
+    "text": "Key Code Excerpts\nAlthough the full implementation is available in the repository, a few excerpts help illustrate the mechanics behind the automation layer. The example below shows how the autosave routine delegates world persistence to a dedicated function and then commits the updated data to Git.\n\nscripts/autosave.sh\n#!/bin/bash\nset -e\n\nsource /usr/local/bin/log.sh\nsource /usr/local/bin/saveWorld.sh\n\nLOG_DIR=\"/var/log/mc-scripts\"\nLOG_FILE=\"$LOG_DIR/autosave.log\"\n\nREPO_DIR=\"/data/$REPO_NAME\"\n\nREPO_URL=\"https://$GITHUB_TOKEN@github.com/$GITHUB_USER/$REPO_NAME.git\"\n\nlog \"AUTOSAVE\" \"Starting execution...\"\n\ngit config --global --add safe.directory \"$REPO_DIR\"\ngit config --global init.defaultBranch main\n\nif [ ! -d \"$REPO_DIR/.git\" ]; then\n    log \"AUTOSAVE\" \"Repository not created. Initializing new repo at $REPO_DIR...\"\n\n    git -C \"$REPO_DIR\" init\n\n    log \"AUTOSAVE\" \"Adding remote origin: $REPO_URL\"\n    \n    git -C \"$REPO_DIR\" remote add origin \"$REPO_URL\"\nfi\n\nsaveWorld \"AUTOSAVE\"\n\nlog \"AUTOSAVE\" \"Execution completed.\"\n\n\nutils/saveWorld.sh\n#!/bin/bash\n\nsource /usr/local/bin/log.sh\n\nRCON_HOST=\"localhost\"\nRCON_PORT=${RCON_PORT:-25575}\nRCON_PASS=$RCON_PASSWORD\n\nsaveWorld() {\n  local PREFIX=\"$1\"\n\n  local UTC_NOW=\"$(date -u +\"%Y-%m-%dT%H:%M:%SZ\")\"\n  local COMMIT_MSG=\"$UTC_NOW - $PREFIX\"\n\n  rcon-cli 'tellraw @a {\"text\":\"📂 Backup started!\",\"color\":\"gold\"}'\n\n  sleep 2\n\n  rcon-cli \"save-all\"\n\n  sleep 2\n\n  log $PREFIX \"World successfully saved.\"\n\n  git -C \"$REPO_DIR\" add .\n  git -C \"$REPO_DIR\" commit -m \"$COMMIT_MSG\" || log \"AUTOSAVE\" \"Nothing to commit\"\n\n  if ! git -C \"$REPO_DIR\" push; then\n      log $PREFIX \"Upstream not set. Setting upstream and retrying push...\"\n\n      git -C \"$REPO_DIR\" push -u origin main\n  fi\n\n  log $PREFIX \"Autosave successfully deployed.\"\n\n  rcon-cli 'tellraw @a {\"text\":\"📁 Backup completed!\",\"color\":\"green\"}'\n}\nThese sections illustrate the predictable structure that supports periodic and manual world preservation. The underlying model is intentionally minimalistic so the logic remains transparent and easy to debug.\n\nPersistent digital environments demand predictable behaviour. Whether managing corporate infrastructure or personal projects, stability depends on systems that continue to operate even when attention shifts elsewhere. Over time I realised that reliable automation is not only relevant in professional settings. It can also solve surprisingly ordinary problems.\nA practical example emerged in my own home. My partner and I often play Minecraft together and our sessions sometimes last several hours. Anyone who has hosted a local or containerised server knows that crashes or unexpected shutdowns can corrupt the world or erase progress. After losing entire builds on more than one occasion I started thinking seriously about how to design a stable and automatic backup mechanism that would remove the risk altogether.\nThis line of thinking eventually led to a full architecture that integrates Docker, Git and GitHub for continuous world versioning. Although this post uses that implementation as a reference, the focus here is the reasoning that guides the creation of automation pipelines that are reliable, observable and resilient."
+  },
+  {
+    "objectID": "posts/272f6b74-e11a-4ade-a717-0e037d062c7c/index.html#designing-the-automation-flow",
+    "href": "posts/272f6b74-e11a-4ade-a717-0e037d062c7c/index.html#designing-the-automation-flow",
+    "title": "Designing Reliable Automation Pipelines for Persistent Game Worlds",
+    "section": "Designing the Automation Flow",
+    "text": "Designing the Automation Flow\nBefore exploring each script it is useful to visualise how the overall workflow operates. The intention was to create a loop that could run indefinitely, independent of the user’s attention.\n\n\n\n\n\nflowchart TB;\n  A[Container starts]\n  B[Initialisation script]\n  C{Repository exists?}\n  D[Clone or update repository]\n  E[Prepare empty repository]\n  F[Start Minecraft server]\n  G[Periodic loop starts]\n  H[Autosave script executes every N minutes]\n  I[saveWorld.sh]\n  J[Git add and commit]\n  K[Push to GitHub]\n  L[Container receives stop signal]\n  M[Shutdown script]\n\n  A --&gt; B\n  B --&gt; C\n\n  C -- Yes --&gt; D\n  C -- No --&gt; E\n\n  D --&gt; F\n  E --&gt; F\n\n  F --&gt; G\n  G --&gt; H\n\n  H --&gt; I\n  I --&gt; J\n  J --&gt; K\n\n  F --&gt; L\n  L --&gt; M\n  M --&gt; I\n\n\n\n\n\n\nThis diagram reflects the core concept. Every event leads to a deterministic and observable action. World data is always saved, always committed and always pushed."
+  },
+  {
+    "objectID": "posts/272f6b74-e11a-4ade-a717-0e037d062c7c/index.html#understanding-the-file-structure",
+    "href": "posts/272f6b74-e11a-4ade-a717-0e037d062c7c/index.html#understanding-the-file-structure",
+    "title": "Designing Reliable Automation Pipelines for Persistent Game Worlds",
+    "section": "Understanding the File Structure",
+    "text": "Understanding the File Structure\nThe project uses a modular structure that separates concerns and creates predictable behaviours. Each file contributes uniquely to the automation pipeline.\n.\n├── docker-compose.yml\n├── Dockerfile\n├── entrypoint.sh\n├── .env.example\n├── .gitignore\n├── README.md\n├── scripts\n│   ├── autosave.sh\n│   ├── init.sh\n│   ├── shutdown.sh\n├── utils\n│   ├── log.sh\n│   ├── saveWorld.sh\nEach one will be explained individually so the full picture becomes clear."
+  },
+  {
+    "objectID": "posts/272f6b74-e11a-4ade-a717-0e037d062c7c/index.html#container-and-image-definitions",
+    "href": "posts/272f6b74-e11a-4ade-a717-0e037d062c7c/index.html#container-and-image-definitions",
+    "title": "Designing Reliable Automation Pipelines for Persistent Game Worlds",
+    "section": "Container and Image Definitions",
+    "text": "Container and Image Definitions\n\ndocker-compose.yml\nDefines how the server is launched. It handles:\n\nPort exposure for gameplay and RCON access;\nEnvironment variable loading;\nPersistence of the Minecraft world and logs;\nBuilding the custom image from the local Dockerfile.\n\nIts purpose is to maintain stability across restarts and ensure that all automation scripts remain present inside the container.\n\n\n\nDockerfile\nThe Dockerfile extends the “official” image itzg/minecraft-server:java21 then introduces all custom scripts. This combination provides the reliability of a well maintained base image while enabling custom behaviour controlled entirely by our own entrypoint.\n\n\n\n\n\nflowchart LR;\n  A[\"&quot;Official&quot; Minecraft Server Image\"]\n  B[Import custom scripts]\n  C[Add entrypoint logic]\n  D[Build customised backup capable image]\n\n  A --&gt; B\n  B --&gt; C\n  C --&gt; D\n\n\n\n\n\n\nThis duality of stability and customisation supports the idea of predictable infrastructure that can also adapt to specific needs."
+  },
+  {
+    "objectID": "posts/272f6b74-e11a-4ade-a717-0e037d062c7c/index.html#core-execution-orchestrator",
+    "href": "posts/272f6b74-e11a-4ade-a717-0e037d062c7c/index.html#core-execution-orchestrator",
+    "title": "Designing Reliable Automation Pipelines for Persistent Game Worlds",
+    "section": "Core Execution Orchestrator",
+    "text": "Core Execution Orchestrator\n\nentrypoint.sh\nThis script coordinates the lifecycle of the server and backup system.\nIt performs:\n\nInitialisation;\nStartup synchronisation;\nLaunch of the periodic autosave loop;\nDelegation to the official Minecraft server start script;\nGraceful shutdown and final backup.\n\nA second diagram helps illustrate this behaviour.\n\n\n\n\n\nflowchart TB;\n  A[entrypoint.sh starts]\n  B[Run init.sh]\n  C[Configure and sync repository]\n  D[Start autosave loop in background]\n  E[Begin Minecraft server]\n  F{Stop signal received?}\n  G[Run shutdown.sh]\n  H[Final save and push]\n\n  A --&gt; B\n  B --&gt; C\n  C --&gt; D\n  D --&gt; E\n  E --&gt; F\n  F -- Yes --&gt; G\n  G --&gt; H\n  F -- No --&gt; E\n\n\n\n\n\n\nThis flow ensures that no world data is lost, regardless of how the container stops."
+  },
+  {
+    "objectID": "posts/272f6b74-e11a-4ade-a717-0e037d062c7c/index.html#utility-layers",
+    "href": "posts/272f6b74-e11a-4ade-a717-0e037d062c7c/index.html#utility-layers",
+    "title": "Designing Reliable Automation Pipelines for Persistent Game Worlds",
+    "section": "Utility Layers",
+    "text": "Utility Layers\n\nutils/log.sh\nA lightweight logger that standardises how each script communicates events. Every log entry includes a timestamp and prefix. This improves verification and troubleshooting. Logs are written to persistent storage so they survive container recreation.\n\n\n\nutils/saveWorld.sh\nThe most responsibilities in the automation pipeline concentrate here. It performs:\n\nIn game world save via RCON\nGit staging and committing\nPush synchronisation with GitHub\nMessaging for both users and logs\n\nIt represents the core reliability mechanism. If this script functions correctly, every world state becomes recoverable."
+  },
+  {
+    "objectID": "posts/272f6b74-e11a-4ade-a717-0e037d062c7c/index.html#lifecycle-scripts",
+    "href": "posts/272f6b74-e11a-4ade-a717-0e037d062c7c/index.html#lifecycle-scripts",
+    "title": "Designing Reliable Automation Pipelines for Persistent Game Worlds",
+    "section": "Lifecycle Scripts",
+    "text": "Lifecycle Scripts\n\nscripts/init.sh\nExecuted only during startup. It validates the remote repository, checks whether it exists and whether it is empty. It clones or prepares the repository so the world directory becomes fully managed by Git. This step prevents drift between the running server and the stored history.\n\n\n\nscripts/autosave.sh\nRuns periodically based on the interval defined in the environment variables. It configures Git, initialises a new repository if needed and calls saveWorld.sh. These periodic commits create a complete backup timeline.\n\n\n\nscripts/shutdown.sh\nTriggered on termination of the container. It immediately calls saveWorld.sh so the final server state is stored safely. This prevents data corruption and makes the server restart friendly regardless of how the container was stopped."
+  },
+  {
+    "objectID": "posts/272f6b74-e11a-4ade-a717-0e037d062c7c/index.html#environment-templates-and-management",
+    "href": "posts/272f6b74-e11a-4ade-a717-0e037d062c7c/index.html#environment-templates-and-management",
+    "title": "Designing Reliable Automation Pipelines for Persistent Game Worlds",
+    "section": "Environment Templates and Management",
+    "text": "Environment Templates and Management\n\n.env.example\nGuides the user in defining:\n\nGitHub repository credentials\nMinecraft server settings\nRCON access\nBackup intervals\nMetadata for commits\n\nThis separation of configuration strengthens clarity and reduces accidental misconfiguration."
   },
   {
     "objectID": "posts/80bacc68-054f-4ecf-958a-ce404eb4c8ff/index.html",
@@ -47,19 +124,5 @@
     "title": "Achievements",
     "section": "",
     "text": "Notice\n          \n        \n        \n          This blog is a work in progress. Follow me on LinkedIn for updates.\n        \n      \n    \n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "aboutMe/resume.html",
-    "href": "aboutMe/resume.html",
-    "title": "Daniel R. T. Filho",
-    "section": "",
-    "text": "Full-Stack Engineer and Data Scientist\n\n\n\n\nOverview\nResearch & Development Engineer with experience in software development, data science, and machine learning. As a Senior Full-Stack Engineer, I integrate Front-End and Back-End technologies to develop innovative and efficient solutions. Passionate about data-driven insights and AI, I continuously seek to enhance systems through research, optimization, and cutting-edge technology.\n\n\n\nExperience\n\n\n\nArgus Solutions\nFull-time\nPiracicaba, São Paulo, Brazil · Hybrid\n\nSenior Full-Stack Developer and Data Scientist\nJanuary 2025 - Present\n\n\nSenior Full-Stack Developer\nJuly 2024 - January 2025 · 7 months\n\n\n\n\n\n\n\nPleno Full-stack Developer\nGuild Market\nJune 2024 - July 2024 · 2 months\nMacaé, Rio de Janeiro, Brazil · Remote\n\n\n\n\n\n\nPleno Mobile Developer and Junior 3D Modeler\nWoodyverso\nOctober 2022 - February 2023 · 5 months\nMacaé, Rio de Janeiro, Brazil · Remote\n\n\n\n\n\n\nEMARTIM\nFull-time · 1 years and 10 months\nPiracicaba, São Paulo, Brazil · Remote\n\nJunior Full-stack and Mobile Developer\nDecember 2022 - March 2024 · 1 years and 4 months\n\n\nJunior Mobile Developer\nJune 2022 - December 2022 · 7 months\n\n\n\n\n\n\n\nIntern Front-End Developer\nGBM Tech & Control\nFebruary 2022 - May 2022 · 4 months\nSantos, São Paulo, Brazil · Hybrid\n\n\n\n\n\n\n\n\n\n\nEducation\n\n\n\nBachelor of Engineering in Mechatronics\n\nUnicesumar,\nMay 2024 - Current\n\n\n\n\n\n\n\nAssociate Degree in Internet Systems\n\nUnicesumar,\nJuly 2022 - July 2024\n\n\n\n\n\n\n\nTechnical Degree in Systems Development\n\nEscola Técnica Estadual de Peruíbe (ETEC),\nJanuary 2019 - December 2021\n\n\n\n\n\nAnd more: Licenses and certificates\n\n\nSee also my Skills\n\n\n\n\nMain Languages\n\n\n\nPython\nJulia\nR\nDart\nC#\nPHP\nSQL\n\n\n\n\nNoSQL\nKotlin\nJava\nJavaScript\nTypeScript\nHTML\nCSS\n\n\n\n\n\n\nSome Frameworks and Technologies\n\n\n\nAWS\nFlutter\nReact\nReact Native\nExpress.js\nCodeIgniter\nFastAPI\nASP.NET\n\n\n\n\nMySQL\nMariaDB\nMongoDB\nNode.js\nShiny\nOxygen.jl\nJupyter\n\n\n\n\n\n\nGame Engines\n\n\n\nUnity\nGodot"
-  },
-  {
-    "objectID": "posts/index.html",
-    "href": "posts/index.html",
-    "title": "Posts",
-    "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n\n\n\n\n\n\n\n\n\n\nStep by step guide on how to ruin your company and your team with AI\n\n\n\nBehavioral Analysis\n\nArtificial Intelligence\n\nEthics\n\nManagement\n\n\n\nThis post aims to apply psychology concepts to address a sensitive topic for those who are limited by the use of generative artificial intelligence tools in the professional environment, acting as a direct attack on the intellect, raising questions and seeking plausible solutions.\n\n\n\n\n\nFebruary 12, 2025\n\n7 min\n\n\n\n\nNo matching items"
   }
 ]

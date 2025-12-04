@@ -1,11 +1,19 @@
 [
   {
+    "listing": "/posts/index.html",
+    "items": [
+      "/posts/272f6b74-e11a-4ade-a717-0e037d062c7c/index.html",
+      "/posts/80bacc68-054f-4ecf-958a-ce404eb4c8ff/index.html"
+    ]
+  },
+  {
     "listing": "/projects/index.html",
     "items": []
   },
   {
     "listing": "/index.html",
     "items": [
+      "/posts/272f6b74-e11a-4ade-a717-0e037d062c7c/index.html",
       "/posts/80bacc68-054f-4ecf-958a-ce404eb4c8ff/index.html"
     ]
   },
@@ -16,11 +24,5 @@
   {
     "listing": "/achievements/index.html",
     "items": []
-  },
-  {
-    "listing": "/posts/index.html",
-    "items": [
-      "/posts/80bacc68-054f-4ecf-958a-ce404eb4c8ff/index.html"
-    ]
   }
 ]

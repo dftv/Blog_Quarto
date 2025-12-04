@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-02-12">
-<meta name="description" content="This post aims to apply psychology concepts to address a sensitive topic for those who are limited by the use of generative artificial intelligence tools in the professional environment, acting as a direct attack on the intellect, raising questions and seeking plausible solutions.">
+<meta name="dcterms.date" content="2025-12-04">
+<meta name="description" content="This post presents the reasoning process and technical decisions that led to the creation of a reliable backup and automation workflow for persistent game servers, including a real use case related to maintaining stable Minecraft sessions at home.">
 
-<title>Step by step guide on how to ruin your company and your team with AI – DT’s Blog</title>
+<title>Designing Reliable Automation Pipelines for Persistent Game Worlds – DT’s Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,27 +22,42 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
 }
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -113,8 +128,8 @@ div.csl-indent {
 <link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
-<meta property="og:title" content="Step by step guide on how to ruin your company and your team with AI – DT’s Blog">
-<meta property="og:description" content="This post aims to apply psychology concepts to address a sensitive topic for those who are limited by the use of generative artificial intelligence tools in the professional environment, acting as a direct attack on the intellect, raising questions and seeking plausible solutions.">
+<meta property="og:title" content="Designing Reliable Automation Pipelines for Persistent Game Worlds – DT’s Blog">
+<meta property="og:description" content="This post presents the reasoning process and technical decisions that led to the creation of a reliable backup and automation workflow for persistent game servers, including a real use case related to maintaining stable Minecraft sessions at home.">
 <meta property="og:site_name" content="DT's Blog">
 </head>
 
@@ -347,19 +362,20 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Step by step guide on how to ruin your company and your team with AI</h1>
-<p class="subtitle lead">A roadmap to the quickest way to lose your team’s trust</p>
+<h1 class="title">Designing Reliable Automation Pipelines for Persistent Game Worlds</h1>
+<p class="subtitle lead">A practical exploration of reasoning, architecture and stable backup mechanisms</p>
   <div class="quarto-categories">
-    <div class="quarto-category">Behavioral Analysis</div>
-    <div class="quarto-category">Artificial Intelligence</div>
-    <div class="quarto-category">Ethics</div>
-    <div class="quarto-category">Management</div>
+    <div class="quarto-category">DevOps</div>
+    <div class="quarto-category">Automation</div>
+    <div class="quarto-category">Infrastructure</div>
+    <div class="quarto-category">Systems Design</div>
+    <div class="quarto-category">Reliability Engineering</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    This post aims to apply psychology concepts to address a sensitive topic for those who are limited by the use of generative artificial intelligence tools in the professional environment, acting as a direct attack on the intellect, raising questions and seeking plausible solutions.
+    This post presents the reasoning process and technical decisions that led to the creation of a reliable backup and automation workflow for persistent game servers, including a real use case related to maintaining stable Minecraft sessions at home.
   </div>
 </div>
 
@@ -370,7 +386,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 12, 2025</p>
+      <p class="date">December 4, 2025</p>
     </div>
   </div>
   
@@ -383,197 +399,332 @@ div.csl-indent {
 
 
 <hr>
-<p>It’s pretty easy to keep a team organized with a well-defined workflow, right?</p>
-<p>But if you want to showcase your incompetence or simply watch everything go up in flames, this post is for you!</p>
-<p>Already in a leadership position and ready to swim against the tide? Here are some tips to quickly turn everything upside down, bringing chaos and demotivation as fast as possible to everyone relying on your work.</p>
-<p>And the best part:</p>
-<ul>
-<li>Without much effort;</li>
-<li>Reducing your workload;</li>
-<li>And with the most groundbreaking tool of the moment<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>!</li>
-</ul>
-<p>To better understand where you can fail and make it blatantly obvious to everyone, let’s break down the following workflow I’ve created:</p>
+<section id="reference-implementation" class="level2">
+<h2 class="anchored" data-anchor-id="reference-implementation">Reference Implementation</h2>
+<p>The complete implementation described throughout this post is publicly available in the following repository:</p>
+<p><strong>GitHub Repository</strong><br>
+<a href="https://github.com/danieltorquatof/MinecraftBackup_Docker">danieltorquatof/MinecraftBackup_Docker</a></p>
+<p>The project contains the full set of scripts, Docker definitions and utility functions that support the automation flow presented above. Reviewing the code directly in the repository can help contextualise the behaviour of each component and illustrate how the pieces integrate in practice.</p>
+<hr>
+</section>
+<section id="key-code-excerpts" class="level2">
+<h2 class="anchored" data-anchor-id="key-code-excerpts">Key Code Excerpts</h2>
+<p>Although the full implementation is available in the repository, a few excerpts help illustrate the mechanics behind the automation layer. The example below shows how the autosave routine delegates world persistence to a dedicated function and then commits the updated data to Git.</p>
+<section id="scriptsautosave.sh" class="level3">
+<h3 class="anchored" data-anchor-id="scriptsautosave.sh">scripts/autosave.sh</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> <span class="at">-e</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> /usr/local/bin/log.sh</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> /usr/local/bin/saveWorld.sh</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="va">LOG_DIR</span><span class="op">=</span><span class="st">"/var/log/mc-scripts"</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="va">LOG_FILE</span><span class="op">=</span><span class="st">"</span><span class="va">$LOG_DIR</span><span class="st">/autosave.log"</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="va">REPO_DIR</span><span class="op">=</span><span class="st">"/data/</span><span class="va">$REPO_NAME</span><span class="st">"</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="va">REPO_URL</span><span class="op">=</span><span class="st">"https://</span><span class="va">$GITHUB_TOKEN</span><span class="st">@github.com/</span><span class="va">$GITHUB_USER</span><span class="st">/</span><span class="va">$REPO_NAME</span><span class="st">.git"</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ex">log</span> <span class="st">"AUTOSAVE"</span> <span class="st">"Starting execution..."</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> <span class="at">--add</span> safe.directory <span class="st">"</span><span class="va">$REPO_DIR</span><span class="st">"</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> init.defaultBranch main</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="bu">[</span> <span class="ot">!</span> <span class="ot">-d</span> <span class="st">"</span><span class="va">$REPO_DIR</span><span class="st">/.git"</span> <span class="bu">]</span><span class="kw">;</span> <span class="cf">then</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="ex">log</span> <span class="st">"AUTOSAVE"</span> <span class="st">"Repository not created. Initializing new repo at </span><span class="va">$REPO_DIR</span><span class="st">..."</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> <span class="at">-C</span> <span class="st">"</span><span class="va">$REPO_DIR</span><span class="st">"</span> init</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    <span class="ex">log</span> <span class="st">"AUTOSAVE"</span> <span class="st">"Adding remote origin: </span><span class="va">$REPO_URL</span><span class="st">"</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> <span class="at">-C</span> <span class="st">"</span><span class="va">$REPO_DIR</span><span class="st">"</span> remote add origin <span class="st">"</span><span class="va">$REPO_URL</span><span class="st">"</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="cf">fi</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="ex">saveWorld</span> <span class="st">"AUTOSAVE"</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ex">log</span> <span class="st">"AUTOSAVE"</span> <span class="st">"Execution completed."</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="utilssaveworld.sh" class="level3">
+<h3 class="anchored" data-anchor-id="utilssaveworld.sh">utils/saveWorld.sh</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> /usr/local/bin/log.sh</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="va">RCON_HOST</span><span class="op">=</span><span class="st">"localhost"</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="va">RCON_PORT</span><span class="op">=</span><span class="va">${RCON_PORT</span><span class="op">:-</span>25575<span class="va">}</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="va">RCON_PASS</span><span class="op">=</span><span class="va">$RCON_PASSWORD</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">saveWorld()</span> <span class="kw">{</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="bu">local</span> <span class="va">PREFIX</span><span class="op">=</span><span class="st">"</span><span class="va">$1</span><span class="st">"</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="bu">local</span> <span class="va">UTC_NOW</span><span class="op">=</span><span class="st">"</span><span class="va">$(</span><span class="fu">date</span> <span class="at">-u</span> +<span class="st">"%Y-%m-%dT%H:%M:%SZ"</span><span class="va">)</span><span class="st">"</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  <span class="bu">local</span> <span class="va">COMMIT_MSG</span><span class="op">=</span><span class="st">"</span><span class="va">$UTC_NOW</span><span class="st"> - </span><span class="va">$PREFIX</span><span class="st">"</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="ex">rcon-cli</span> <span class="st">'tellraw @a {"text":"📂 Backup started!","color":"gold"}'</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sleep</span> 2</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="ex">rcon-cli</span> <span class="st">"save-all"</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sleep</span> 2</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>  <span class="ex">log</span> <span class="va">$PREFIX</span> <span class="st">"World successfully saved."</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">git</span> <span class="at">-C</span> <span class="st">"</span><span class="va">$REPO_DIR</span><span class="st">"</span> add .</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">git</span> <span class="at">-C</span> <span class="st">"</span><span class="va">$REPO_DIR</span><span class="st">"</span> commit <span class="at">-m</span> <span class="st">"</span><span class="va">$COMMIT_MSG</span><span class="st">"</span> <span class="kw">||</span> <span class="ex">log</span> <span class="st">"AUTOSAVE"</span> <span class="st">"Nothing to commit"</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="ot">! </span><span class="fu">git</span> <span class="at">-C</span> <span class="st">"</span><span class="va">$REPO_DIR</span><span class="st">"</span> push<span class="kw">;</span> <span class="cf">then</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>      <span class="ex">log</span> <span class="va">$PREFIX</span> <span class="st">"Upstream not set. Setting upstream and retrying push..."</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>      <span class="fu">git</span> <span class="at">-C</span> <span class="st">"</span><span class="va">$REPO_DIR</span><span class="st">"</span> push <span class="at">-u</span> origin main</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>  <span class="cf">fi</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>  <span class="ex">log</span> <span class="va">$PREFIX</span> <span class="st">"Autosave successfully deployed."</span></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>  <span class="ex">rcon-cli</span> <span class="st">'tellraw @a {"text":"📁 Backup completed!","color":"green"}'</span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>These sections illustrate the predictable structure that supports periodic and manual world preservation. The underlying model is intentionally minimalistic so the logic remains transparent and easy to debug.</p>
+<hr>
+<p>Persistent digital environments demand predictable behaviour. Whether managing corporate infrastructure or personal projects, stability depends on systems that continue to operate even when attention shifts elsewhere. Over time I realised that reliable automation is not only relevant in professional settings. It can also solve surprisingly ordinary problems.</p>
+<p>A practical example emerged in my own home. My partner and I often play Minecraft together and our sessions sometimes last several hours. Anyone who has hosted a local or containerised server knows that crashes or unexpected shutdowns can corrupt the world or erase progress. After losing entire builds on more than one occasion I started thinking seriously about how to design a stable and automatic backup mechanism that would remove the risk altogether.</p>
+<p>This line of thinking eventually led to a full architecture that integrates Docker, Git and GitHub for continuous world versioning. Although this post uses that implementation as a reference, the focus here is the reasoning that guides the creation of automation pipelines that are reliable, observable and resilient.</p>
+<hr>
+</section>
+</section>
+<section id="designing-the-automation-flow" class="level2">
+<h2 class="anchored" data-anchor-id="designing-the-automation-flow">Designing the Automation Flow</h2>
+<p>Before exploring each script it is useful to visualise how the overall workflow operates. The intention was to create a loop that could run indefinitely, independent of the user’s attention.</p>
 <div class="cell" data-fig-width="100%" data-layout-align="center">
 <div class="cell-output-display">
 <div>
 <p></p><figure class="figure"><p></p>
 <div>
 <pre class="mermaid mermaid-js">flowchart TB;
-  T1[
-    By optimizing with AI processes like:
-  ]
+  A[Container starts]
+  B[Initialisation script]
+  C{Repository exists?}
+  D[Clone or update repository]
+  E[Prepare empty repository]
+  F[Start Minecraft server]
+  G[Periodic loop starts]
+  H[Autosave script executes every N minutes]
+  I[saveWorld.sh]
+  J[Git add and commit]
+  K[Push to GitHub]
+  L[Container receives stop signal]
+  M[Shutdown script]
 
-  subgraph G1[ ]
-    G1.1[
-      Sending corporate messages
-      or emails
-    ]
+  A --&gt; B
+  B --&gt; C
 
-    G1.2[
-      Problem-solving
-    ]
+  C -- Yes --&gt; D
+  C -- No --&gt; E
 
-    G1.3[Task delegation]
+  D --&gt; F
+  E --&gt; F
 
-    G1.4[Decision-making]
-  end
+  F --&gt; G
+  G --&gt; H
 
-  subgraph G2[ ]
-    subgraph G2.1[ ]
-      direction TB
+  H --&gt; I
+  I --&gt; J
+  J --&gt; K
 
-      G2.1.1[Lack of empathy and social skills]
-      G2.1.2[Lack of contextual awareness]
-      G2.1.3[Ignoring feedback]
-      G2.1.4[Ineffective communication]
-
-      G2.1.1 --&gt; G2.1.2
-      G2.1.2 --&gt; G2.1.3
-      G2.1.3 --&gt; G2.1.4
-    end
-
-    subgraph G2.2[ ]
-      direction TB
-
-      G2.2.1[Technical superficiality]
-      G2.2.2[Lack of active leadership]
-      G2.2.3[Impersonal decisions with no relevant contextual basis]
-      G2.2.4[Inability to solve problems]
-
-      G2.2.1 --&gt; G2.2.2
-      G2.2.2 --&gt; G2.2.3
-      G2.2.3 --&gt; G2.2.4
-    end
-
-    subgraph G2.3[ ]
-      direction TB
-
-      G2.3.1[Technical superficiality]
-      G2.3.2[Lack of understanding of internal processes and business rules]
-      G2.3.3[Neglect of organization and planning]
-      G2.3.4[Inefficiency in delegating tasks]
-
-      G2.3.1 --&gt; G2.3.2
-      G2.3.2 --&gt; G2.3.3
-      G2.3.3 --&gt; G2.3.4
-    end
-
-    subgraph G2.4[ ]
-      direction TB
-
-      G2.4.1[Lack of active leadership]
-      G2.4.2[Ignoring feedback and human factors]
-      G2.4.3[Neglect of organization and planning]
-      G2.4.4[Inability to make assertive decisions]
-
-      G2.4.1 --&gt; G2.4.2
-      G2.4.2 --&gt; G2.4.3
-      G2.4.3 --&gt; G2.4.4
-    end
-  end
-
-  subgraph G3[ ]
-    G3.1[Loss of trust in leadership]
-    G3.2[Doubt about your expertise]
-    G3.3[Increase in mistakes and rework]
-    G3.4[Internal conflicts between teams and departments]
-  end
-
-  T2[Demotivated and unproductive work environment]
-
-  T1 --&gt;  G1.1 &amp; G1.2 &amp; G1.3 &amp; G1.4
-
-  G1.1 -- You demonstrate --&gt; G2.1
-  G1.2 -- You demonstrate --&gt; G2.2
-  G1.3 -- You demonstrate --&gt; G2.3
-  G1.4 -- You demonstrate --&gt; G2.4
-
-  G2.1 -- Leading to --&gt; G3.1
-  G2.2 -- Leading to --&gt; G3.2
-  G2.3 -- Leading to --&gt; G3.3
-  G2.4 -- Leading to --&gt; G3.4
-
-  G3.1 &amp; G3.2 &amp; G3.3 &amp; G3.4 -- Resulting in --&gt; T2
+  F --&gt; L
+  L --&gt; M
+  M --&gt; I
 </pre>
 </div>
 <p></p></figure><p></p>
 </div>
 </div>
 </div>
-<p>See how easy it is to visualize how simple processes can trigger a chain of problems that will inevitably lead to your undeniable exclusion and eventual termination?</p>
+<p>This diagram reflects the core concept. Every event leads to a deterministic and observable action. World data is always saved, always committed and always pushed.</p>
 <hr>
-<p>Maybe you felt personally attacked by how this topic was introduced.</p>
-<p>If so, part of that is due to the Psychological Reactance phenomenon<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> combined with elements of Reverse Psychology<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p>
-<p>By deliberately exaggerating the impact of the indiscriminate use of this miraculous tool<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> — framing as “correct” something that is generally frowned upon—you, as the likely target audience, are naturally inclined to resist and deny it. After all, how hard is it to admit that what currently makes you a professional could easily be the nightmare of many of your colleagues? Or worse, that you could be replaced by an inanimate tool?</p>
-<p>This negative reaction from this category of workers is expected since they are already dependent on this enabler<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>, and the idea that it might be harmful—not just to them but to everyone around them—doesn’t fit the short-term results they have experienced so far.</p>
-<p>From a broader perspective, part of the blame may not be entirely yours but rather the fault of those who sold you the idea that this tool<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> is the solution to all your monotonous tasks. However, the lack of supervision and limitation of its use will always lead to its application in a wide range of areas—without proper impact assessment and consideration of consequences—far beyond the monotonous tasks it was originally designed for<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>.</p>
-<p>Currently, most AI models are in constant development and far from their peak, with limitations and flaws that are imperceptible at first glance. This is because their entire functioning is designed to socially please the user, meaning they are structured in a way that prevents you from feeling like you’re facing incorrect or nonsensical information.</p>
-<p>Not convinced? Maybe you’re still caught in Automation Bias<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>. To open your eyes, here are some phenomena that might be happening to you daily without you even realizing it:</p>
+</section>
+<section id="understanding-the-file-structure" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-the-file-structure">Understanding the File Structure</h2>
+<p>The project uses a modular structure that separates concerns and creates predictable behaviours. Each file contributes uniquely to the automation pipeline.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">.</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> docker-compose.yml</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> Dockerfile</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> entrypoint.sh</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> .env.example</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> .gitignore</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> README.md</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> scripts</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── autosave.sh</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── init.sh</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── shutdown.sh</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> utils</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── log.sh</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── saveWorld.sh</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Each one will be explained individually so the full picture becomes clear.</p>
+<hr>
+</section>
+<section id="container-and-image-definitions" class="level2">
+<h2 class="anchored" data-anchor-id="container-and-image-definitions">Container and Image Definitions</h2>
+<section id="docker-compose.yml" class="level3">
+<h3 class="anchored" data-anchor-id="docker-compose.yml">docker-compose.yml</h3>
+<p>Defines how the server is launched. It handles:</p>
 <ul>
-<li><strong>Hallucinations</strong><a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>, where the tool<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> generates responses that, while appearing coherent, have no real basis, being merely a statistical approximation<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> of what would best fit the given context. This happens due to the lack of logical reasoning in these products<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a>, making some responses essentially just “educated guesses.”</li>
-<li><strong>Context Window</strong><a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a>, which limits the amount of information the tool<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a> can process at once, meaning that it often fails to grasp the full context of a situation, leading to responses that don’t align with reality. This becomes even more concerning as there is no explicit indication of what is or isn’t discarded by the tool<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a>.</li>
+<li>Port exposure for gameplay and RCON access;</li>
+<li>Environment variable loading;</li>
+<li>Persistence of the Minecraft world and logs;</li>
+<li>Building the custom image from the local Dockerfile.</li>
 </ul>
-<p>In conclusion, the use of AI tools in corporate environments should be approached with caution and always under the supervision of a qualified professional. After all, no tool can replace critical thinking and assertive decision-making—no matter how convincing or convenient it may seem.</p>
-<p>I hope this reading has helped you open your eyes to the dangers of so-called “miracle” automation tools, both for current AI and for future technologies that may emerge.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<p>Its purpose is to maintain stability across restarts and ensure that all automation scripts remain present inside the container.</p>
+<hr>
+</section>
+<section id="dockerfile" class="level3">
+<h3 class="anchored" data-anchor-id="dockerfile">Dockerfile</h3>
+<p>The Dockerfile extends the “official” image <code>itzg/minecraft-server:java21</code> then introduces all custom scripts. This combination provides the reliability of a well maintained base image while enabling custom behaviour controlled entirely by our own entrypoint.</p>
+<div class="cell" data-fig-width="100%" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR;
+  A["&amp;quot;Official&amp;quot; Minecraft Server Image"]
+  B[Import custom scripts]
+  C[Add entrypoint logic]
+  D[Build customised backup capable image]
+
+  A --&gt; B
+  B --&gt; C
+  C --&gt; D
+</pre>
 </div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Remember
+<p></p></figure><p></p>
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<p>The problem is never the tool itself, but how it is used!</p>
+</div>
+<p>This duality of stability and customisation supports the idea of predictable infrastructure that can also adapt to specific needs.</p>
+<hr>
+</section>
+</section>
+<section id="core-execution-orchestrator" class="level2">
+<h2 class="anchored" data-anchor-id="core-execution-orchestrator">Core Execution Orchestrator</h2>
+<section id="entrypoint.sh" class="level3">
+<h3 class="anchored" data-anchor-id="entrypoint.sh">entrypoint.sh</h3>
+<p>This script coordinates the lifecycle of the server and backup system.</p>
+<p>It performs:</p>
+<ol type="1">
+<li>Initialisation;</li>
+<li>Startup synchronisation;</li>
+<li>Launch of the periodic autosave loop;</li>
+<li>Delegation to the official Minecraft server start script;</li>
+<li>Graceful shutdown and final backup.</li>
+</ol>
+<p>A second diagram helps illustrate this behaviour.</p>
+<div class="cell" data-fig-width="100%" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB;
+  A[entrypoint.sh starts]
+  B[Run init.sh]
+  C[Configure and sync repository]
+  D[Start autosave loop in background]
+  E[Begin Minecraft server]
+  F{Stop signal received?}
+  G[Run shutdown.sh]
+  H[Final save and push]
+
+  A --&gt; B
+  B --&gt; C
+  C --&gt; D
+  D --&gt; E
+  E --&gt; F
+  F -- Yes --&gt; G
+  G --&gt; H
+  F -- No --&gt; E
+</pre>
+</div>
+<p></p></figure><p></p>
 </div>
 </div>
+</div>
+<p>This flow ensures that no world data is lost, regardless of how the container stops.</p>
+<hr>
+</section>
+</section>
+<section id="utility-layers" class="level2">
+<h2 class="anchored" data-anchor-id="utility-layers">Utility Layers</h2>
+<section id="utilslog.sh" class="level3">
+<h3 class="anchored" data-anchor-id="utilslog.sh">utils/log.sh</h3>
+<p>A lightweight logger that standardises how each script communicates events. Every log entry includes a timestamp and prefix. This improves verification and troubleshooting. Logs are written to persistent storage so they survive container recreation.</p>
+<hr>
+</section>
+<section id="utilssaveworld.sh-1" class="level3">
+<h3 class="anchored" data-anchor-id="utilssaveworld.sh-1">utils/saveWorld.sh</h3>
+<p>The most responsibilities in the automation pipeline concentrate here. It performs:</p>
+<ul>
+<li>In game world save via RCON</li>
+<li>Git staging and committing</li>
+<li>Push synchronisation with GitHub</li>
+<li>Messaging for both users and logs</li>
+</ul>
+<p>It represents the core reliability mechanism. If this script functions correctly, every world state becomes recoverable.</p>
+<hr>
+</section>
+</section>
+<section id="lifecycle-scripts" class="level2">
+<h2 class="anchored" data-anchor-id="lifecycle-scripts">Lifecycle Scripts</h2>
+<section id="scriptsinit.sh" class="level3">
+<h3 class="anchored" data-anchor-id="scriptsinit.sh">scripts/init.sh</h3>
+<p>Executed only during startup. It validates the remote repository, checks whether it exists and whether it is empty. It clones or prepares the repository so the world directory becomes fully managed by Git. This step prevents drift between the running server and the stored history.</p>
+<hr>
+</section>
+<section id="scriptsautosave.sh-1" class="level3">
+<h3 class="anchored" data-anchor-id="scriptsautosave.sh-1">scripts/autosave.sh</h3>
+<p>Runs periodically based on the interval defined in the environment variables. It configures Git, initialises a new repository if needed and calls <code>saveWorld.sh</code>. These periodic commits create a complete backup timeline.</p>
+<hr>
+</section>
+<section id="scriptsshutdown.sh" class="level3">
+<h3 class="anchored" data-anchor-id="scriptsshutdown.sh">scripts/shutdown.sh</h3>
+<p>Triggered on termination of the container. It immediately calls <code>saveWorld.sh</code> so the final server state is stored safely. This prevents data corruption and makes the server restart friendly regardless of how the container was stopped.</p>
+<hr>
+</section>
+</section>
+<section id="environment-templates-and-management" class="level2">
+<h2 class="anchored" data-anchor-id="environment-templates-and-management">Environment Templates and Management</h2>
+<section id="env.example" class="level3">
+<h3 class="anchored" data-anchor-id="env.example">.env.example</h3>
+<p>Guides the user in defining:</p>
+<ul>
+<li>GitHub repository credentials</li>
+<li>Minecraft server settings</li>
+<li>RCON access</li>
+<li>Backup intervals</li>
+<li>Metadata for commits</li>
+</ul>
+<p>This separation of configuration strengthens clarity and reduces accidental misconfiguration.</p>
+<hr>
+</section>
+</section>
+<section id="why-this-matters" class="level1">
+<h1>Why This Matters</h1>
+<p>Although the technical implementation is interesting, the motivation emerged from a real problem. Playing Minecraft with my partner is one of our favourite activities and losing progress due to corruption or abrupt shutdowns was frustrating. Manual backups were easy to forget and relying on memory alone was not sustainable.</p>
+<p>Creating an infrastructure that handles backups automatically removed the cognitive load entirely. It also ensured that every session became safe. The system evolved from a personal inconvenience into an elegant example of how automation thinking can improve both professional and personal digital environments.</p>
+<p>This project demonstrates that reliable systems do not appear spontaneously. They are built through reasoning, testing and iteration. Whether used for game worlds, business processes or experimental environments, the principles remain consistent: predictable automation, clear observability and robust fallback mechanisms.</p>
+<hr>
+</section>
+<section id="final-considerations" class="level1 page-columns page-full">
+<h1>Final Considerations</h1>
+<p>Constructing automation flows like this establishes a foundation for trust in any persistent system. Once the structure works without supervision, users are free to focus on the experience rather than maintenance. In my case it allowed long sessions of building and exploration with my partner to continue without disruption.</p>
+<p>I hope this explanation clarifies not only what the system does, but also how it was structured and why the reasoning behind it led to a reliable design.</p>
 <hr>
 <div class="column-body">
-<script src="https://giscus.app/client.js" data-repo="danieltorquatof/blog_quarto" data-repo-id="R_kgDONv_J5g" data-category="Posts" data-mapping="number" data-term="8" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
+<script src="https://giscus.app/client.js" data-repo="danieltorquatof/blog_quarto" data-repo-id="R_kgDONv_J5g" data-category="Posts" data-mapping="number" data-term="40" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
 </script>
 </div>
 
 
+</section>
 
-
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-WhatIsAContextWindow" class="csl-entry" role="listitem">
-Bergmann, Dave. 2024. <span>“What Is a Context Window?”</span> Available at: <a href="https://www.ibm.com/think/topics/context-window" class="uri">https://www.ibm.com/think/topics/context-window</a>.
-</div>
-<div id="ref-HowDoesReversePsychologyWork" class="csl-entry" role="listitem">
-Cherry, Kendra. 2023. <span>“How Does Reverse Psychology Work?”</span> Available at: <a href="https://www.verywellmind.com/what-is-reverse-psychology-5115635" class="uri">https://www.verywellmind.com/what-is-reverse-psychology-5115635</a>.
-</div>
-<div id="ref-WhatAreAIHallucinations" class="csl-entry" role="listitem">
-IBM. 2023. <span>“What Are AI Hallucinations?”</span> Available at <a href="https://www.ibm.com/think/topics/ai-hallucinations" class="uri">https://www.ibm.com/think/topics/ai-hallucinations</a>.
-</div>
-<div id="ref-DoesAutomationBiasDecisionMaking" class="csl-entry" role="listitem">
-SKITKA, LINDA J., KATHLEEN L. MOSIER, and MARK BURDICK. 1999. <span>“Does Automation Bias Decision-Making?”</span> <em>International Journal of Human-Computer Studies</em> 51 (5): 991–1006. <a href="https://www.sciencedirect.com/science/article/pii/S1071581999902525">https://www.sciencedirect.com/science/article/pii/S1071581999902525</a>.
-</div>
-<div id="ref-UnderstandingPsychologicalReactance" class="csl-entry" role="listitem">
-Steindl, Christina, Eva Jonas, Sandra Sittenthaler, Eva Traut-Mattausch, and Jeff Greenberg. 2015. <span>“Understanding Psychological Reactance: New Developments and FindingsUnderstanding Psychological Reactance: New Developments and Findings.”</span> Hogrefe Publishing. <a href="https://doi.org/10.1027/2151-2604/a000222">https://doi.org/10.1027/2151-2604/a000222</a>.
-</div>
-</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>Generative Artificial Intelligence<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>See more at <span class="citation" data-cites="UnderstandingPsychologicalReactance">Steindl et al. (<a href="#ref-UnderstandingPsychologicalReactance" role="doc-biblioref">2015</a>)</span><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>See more at <span class="citation" data-cites="HowDoesReversePsychologyWork">Cherry (<a href="#ref-HowDoesReversePsychologyWork" role="doc-biblioref">2023</a>)</span><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Generative Artificial Intelligence<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>Generative Artificial Intelligence<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>Generative Artificial Intelligence<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p>Generative Artificial Intelligence<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8"><p>See more at <span class="citation" data-cites="DoesAutomationBiasDecisionMaking">SKITKA, MOSIER, and BURDICK (<a href="#ref-DoesAutomationBiasDecisionMaking" role="doc-biblioref">1999</a>)</span><a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn9"><p>See more at <span class="citation" data-cites="WhatAreAIHallucinations">IBM (<a href="#ref-WhatAreAIHallucinations" role="doc-biblioref">2023</a>)</span><a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn10"><p>Generative Artificial Intelligence<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn11"><p>Which may result in an incorrect weight distribution<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn12"><p>Generative artificial intelligences<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn13"><p>See more at <span class="citation" data-cites="WhatIsAContextWindow">Bergmann (<a href="#ref-WhatIsAContextWindow" role="doc-biblioref">2024</a>)</span><a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn14"><p>Generative Artificial Intelligence<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn15"><p>Generative Artificial Intelligence<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
