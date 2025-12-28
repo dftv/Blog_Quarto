@@ -29,14 +29,13 @@ from widgets import (
 from datetime import date
 ```
 
-
 ```{python}
 experienceWidget(
     ExperienceSchema(
         company="Argus Solutions",
         positions=[
             PositionSchema(
-                title="Senior Full-Stack Developer and Data Scientist",
+                title="Full-Stack Software Engineer (Backend & Data Focus)",
                 startDate=date(2025, 1, 1),
                 endDate=date(2025, 11, 1),
                 location="Piracicaba, São Paulo, Brazil",
@@ -44,7 +43,7 @@ experienceWidget(
                 locationType=LocationType.HYBRID,
             ),
             PositionSchema(
-                title="Senior Full-Stack Developer",
+                title="Full-Stack Developer",
                 startDate=date(2024, 7, 1),
                 endDate=date(2025, 1, 1),
                 location="Piracicaba, São Paulo, Brazil",
@@ -62,27 +61,9 @@ experienceWidget(
         company="Guild Market",
         positions=[
             PositionSchema(
-                title="Pleno Full-stack Developer",
+                title="Full-stack Developer",
                 startDate=date(2024, 6, 1),
                 endDate=date(2024, 7, 1),
-                location="Macaé, Rio de Janeiro, Brazil",
-                employmentType=EmploymentType.FREELANCE,
-                locationType=LocationType.REMOTE,
-            ),
-        ],
-    ),
-)
-```
-
-```{python}
-experienceWidget(
-    ExperienceSchema(
-        company="Woodyverso",
-        positions=[
-            PositionSchema(
-                title="Pleno Mobile Developer and Junior 3D Modeler",
-                startDate=date(2022, 10, 1),
-                endDate=date(2023, 2, 1),
                 location="Macaé, Rio de Janeiro, Brazil",
                 employmentType=EmploymentType.FREELANCE,
                 locationType=LocationType.REMOTE,
@@ -98,7 +79,7 @@ experienceWidget(
         company="EMARTIM",
         positions=[
             PositionSchema(
-                title="Junior Full-stack and Mobile Developer",
+                title="Full-stack & Mobile Developer",
                 startDate=date(2022, 12, 1),
                 endDate=date(2024, 3, 1),
                 location="Piracicaba, São Paulo, Brazil",
@@ -106,7 +87,7 @@ experienceWidget(
                 locationType=LocationType.REMOTE,
             ),
             PositionSchema(
-                title="Junior Mobile Developer",
+                title="Mobile Developer",
                 startDate=date(2022, 6, 1),
                 endDate=date(2022, 12, 1),
                 location="Piracicaba, São Paulo, Brazil",
@@ -121,10 +102,28 @@ experienceWidget(
 ```{python}
 experienceWidget(
     ExperienceSchema(
+        company="Woodyverso",
+        positions=[
+            PositionSchema(
+                title="Mobile & AR Developer",
+                startDate=date(2022, 10, 1),
+                endDate=date(2023, 2, 1),
+                location="Macaé, Rio de Janeiro, Brazil",
+                employmentType=EmploymentType.FREELANCE,
+                locationType=LocationType.REMOTE,
+            ),
+        ],
+    ),
+)
+```
+
+```{python}
+experienceWidget(
+    ExperienceSchema(
         company="GBM Tech & Control",
         positions=[
             PositionSchema(
-                title="Intern Front-End Developer",
+                title="Front-End Developer",
                 startDate=date(2022, 2, 1),
                 endDate=date(2022, 5, 1),
                 location="Santos, São Paulo, Brazil",
