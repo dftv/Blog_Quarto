@@ -69,7 +69,7 @@ def formatPositions(experience: ExperienceSchema) -> str:
     endDateFormatted: str = position.endDate.strftime("%B %Y")
 
     response += (
-        f"""> ##### **{experience.company}**  \n"""
+        f"""> ##### **{experience.company} · {position.employmentType.value}**\n"""
         f"> {startDateFormatted} - {"Present" if position.present else endDateFormatted} · {time}  \n"
         f"> {position.location} · {position.locationType.value}  \n"
         "> \n"
