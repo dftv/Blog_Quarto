@@ -39,7 +39,7 @@
     "href": "posts/272f6b74-e11a-4ade-a717-0e037d062c7c/index.html#reference-implementation",
     "title": "Designing Reliable Automation Pipelines for Persistent Game Worlds",
     "section": "Reference Implementation",
-    "text": "Reference Implementation\nThe complete implementation described throughout this post is publicly available in the following repository:\nGitHub Repository\ndanieltorquatof/MinecraftBackup_Docker\nThe project contains the full set of scripts, Docker definitions and utility functions that support the automation flow presented above. Reviewing the code directly in the repository can help contextualise the behaviour of each component and illustrate how the pieces integrate in practice."
+    "text": "Reference Implementation\nThe complete implementation described throughout this post is publicly available in the following repository:\nGitHub Repository\ndanieltorquatof/minecraft-backup\nThe project contains the full set of scripts, Docker definitions and utility functions that support the automation flow presented above. Reviewing the code directly in the repository can help contextualise the behaviour of each component and illustrate how the pieces integrate in practice."
   },
   {
     "objectID": "posts/272f6b74-e11a-4ade-a717-0e037d062c7c/index.html#key-code-excerpts",
