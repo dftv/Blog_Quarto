@@ -3,8 +3,8 @@ name: Quarto Publish
 on:
   workflow_dispatch:
   push:
-    branches:
-      - production
+    tags:
+      - 'v*'
 
 jobs:
   build-deploy:
