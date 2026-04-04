@@ -9,7 +9,7 @@
 <link>https://blog.danieltorquatof.spikeystudio.com/</link>
 <atom:link href="https://blog.danieltorquatof.spikeystudio.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Welcome to my personal blog!</description>
-<generator>quarto-1.8.26</generator>
+<generator>quarto-1.9.36</generator>
 <lastBuildDate>Thu, 04 Dec 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Designing Reliable Automation Pipelines for Persistent Game Worlds</title>
@@ -895,21 +895,21 @@ font-style: inherit;">│</span>   ├── saveWorld.sh</span></code></pre></d
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-WhatIsAContextWindow" class="csl-entry">
-Bergmann, Dave. 2024. <span>“What Is a Context Window?”</span> Available at: <a href="https://www.ibm.com/think/topics/context-window" class="uri">https://www.ibm.com/think/topics/context-window</a>.
+Bergmann, Dave. 2024. <em>What Is a Context Window?</em> Available at: <a href="https://www.ibm.com/think/topics/context-window" class="uri">https://www.ibm.com/think/topics/context-window</a>.
 </div>
 <div id="ref-HowDoesReversePsychologyWork" class="csl-entry">
-Cherry, Kendra. 2023. <span>“How Does Reverse Psychology Work?”</span> Available at: <a href="https://www.verywellmind.com/what-is-reverse-psychology-5115635" class="uri">https://www.verywellmind.com/what-is-reverse-psychology-5115635</a>.
+Cherry, Kendra. 2023. <em>How Does Reverse Psychology Work?</em> Available at: <a href="https://www.verywellmind.com/what-is-reverse-psychology-5115635" class="uri">https://www.verywellmind.com/what-is-reverse-psychology-5115635</a>.
 </div>
 <div id="ref-WhatAreAIHallucinations" class="csl-entry">
-IBM. 2023. <span>“What Are AI Hallucinations?”</span> Available at <a href="https://www.ibm.com/think/topics/ai-hallucinations" class="uri">https://www.ibm.com/think/topics/ai-hallucinations</a>.
+IBM. 2023. <em>What Are AI Hallucinations?</em> Available at <a href="https://www.ibm.com/think/topics/ai-hallucinations" class="uri">https://www.ibm.com/think/topics/ai-hallucinations</a>.
 </div>
 <div id="ref-DoesAutomationBiasDecisionMaking" class="csl-entry">
 SKITKA, LINDA J., KATHLEEN L. MOSIER, and MARK BURDICK. 1999. <span>“Does Automation Bias Decision-Making?”</span> <em>International Journal of Human-Computer Studies</em> 51 (5): 991–1006. <a href="https://www.sciencedirect.com/science/article/pii/S1071581999902525">https://www.sciencedirect.com/science/article/pii/S1071581999902525</a>.
 </div>
 <div id="ref-UnderstandingPsychologicalReactance" class="csl-entry">
-Steindl, Christina, Eva Jonas, Sandra Sittenthaler, Eva Traut-Mattausch, and Jeff Greenberg. 2015. <span>“Understanding Psychological Reactance: New Developments and FindingsUnderstanding Psychological Reactance: New Developments and Findings.”</span> Hogrefe Publishing. <a href="https://doi.org/10.1027/2151-2604/a000222">https://doi.org/10.1027/2151-2604/a000222</a>.
+Steindl, Christina, Eva Jonas, Sandra Sittenthaler, Eva Traut-Mattausch, and Jeff Greenberg. 2015. <em>Understanding Psychological Reactance: New Developments and FindingsUnderstanding Psychological Reactance: New Developments and Findings</em>. No. 4. Hogrefe Publishing. <a href="https://doi.org/10.1027/2151-2604/a000222">https://doi.org/10.1027/2151-2604/a000222</a>.
 </div>
 </div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
@@ -921,7 +921,7 @@ Steindl, Christina, Eva Jonas, Sandra Sittenthaler, Eva Traut-Mattausch, and Jef
 <li id="fn5"><p>Generative Artificial Intelligence↩︎</p></li>
 <li id="fn6"><p>Generative Artificial Intelligence↩︎</p></li>
 <li id="fn7"><p>Generative Artificial Intelligence↩︎</p></li>
-<li id="fn8"><p>See more at <span class="citation" data-cites="DoesAutomationBiasDecisionMaking">SKITKA, MOSIER, and BURDICK (1999)</span>↩︎</p></li>
+<li id="fn8"><p>See more at <span class="citation" data-cites="DoesAutomationBiasDecisionMaking">SKITKA et al. (1999)</span>↩︎</p></li>
 <li id="fn9"><p>See more at <span class="citation" data-cites="WhatAreAIHallucinations">IBM (2023)</span>↩︎</p></li>
 <li id="fn10"><p>Generative Artificial Intelligence↩︎</p></li>
 <li id="fn11"><p>Which may result in an incorrect weight distribution↩︎</p></li>

@@ -7,10 +7,6 @@
     ]
   },
   {
-    "listing": "/projects/index.html",
-    "items": []
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/posts/272f6b74-e11a-4ade-a717-0e037d062c7c/index.html",
@@ -18,11 +14,15 @@
     ]
   },
   {
-    "listing": "/articles/index.html",
+    "listing": "/achievements/index.html",
     "items": []
   },
   {
-    "listing": "/achievements/index.html",
+    "listing": "/projects/index.html",
+    "items": []
+  },
+  {
+    "listing": "/articles/index.html",
     "items": []
   }
 ]
