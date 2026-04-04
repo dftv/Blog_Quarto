@@ -35,7 +35,7 @@ experienceWidget(
         company="Argus Solutions",
         positions=[
             PositionSchema(
-                title="Full-Stack Software Engineer (Backend & Data Focus)",
+                title="Senior Full-Stack Engineer & Data Scientist",
                 startDate=date(2025, 1, 1),
                 endDate=date(2025, 11, 1),
                 location="Piracicaba, São Paulo, Brazil",
@@ -43,7 +43,7 @@ experienceWidget(
                 locationType=LocationType.HYBRID,
             ),
             PositionSchema(
-                title="Full-Stack Developer",
+                title="Senior Full-Stack Developer",
                 startDate=date(2024, 7, 1),
                 endDate=date(2025, 1, 1),
                 location="Piracicaba, São Paulo, Brazil",
@@ -61,7 +61,7 @@ experienceWidget(
         company="Guild Market",
         positions=[
             PositionSchema(
-                title="Full-stack Developer",
+                title="Pleno Full-Stack Developer",
                 startDate=date(2024, 6, 1),
                 endDate=date(2024, 7, 1),
                 location="Macaé, Rio de Janeiro, Brazil",
@@ -79,7 +79,7 @@ experienceWidget(
         company="EMARTIM",
         positions=[
             PositionSchema(
-                title="Full-stack & Mobile Developer",
+                title="Junior Full-Stack & Mobile Developer",
                 startDate=date(2022, 12, 1),
                 endDate=date(2024, 3, 1),
                 location="Piracicaba, São Paulo, Brazil",
@@ -87,7 +87,7 @@ experienceWidget(
                 locationType=LocationType.REMOTE,
             ),
             PositionSchema(
-                title="Mobile Developer",
+                title="Junior Mobile Developer",
                 startDate=date(2022, 6, 1),
                 endDate=date(2022, 12, 1),
                 location="Piracicaba, São Paulo, Brazil",
@@ -105,7 +105,7 @@ experienceWidget(
         company="Woodyverso",
         positions=[
             PositionSchema(
-                title="Mobile & AR Developer",
+                title="Pleno Mobile Developer and Junior 3D Modeler",
                 startDate=date(2022, 10, 1),
                 endDate=date(2023, 2, 1),
                 location="Macaé, Rio de Janeiro, Brazil",
@@ -123,7 +123,7 @@ experienceWidget(
         company="GBM Tech & Control",
         positions=[
             PositionSchema(
-                title="Front-End Developer",
+                title="Intern Front-End Developer",
                 startDate=date(2022, 2, 1),
                 endDate=date(2022, 5, 1),
                 location="Santos, São Paulo, Brazil",
