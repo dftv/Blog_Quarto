@@ -32,13 +32,31 @@ from datetime import date
 ```{python}
 experienceWidget(
     ExperienceSchema(
+        company="Spikey Studio",
+        positions=[
+            PositionSchema(
+                title="Founder & CEO",
+                startDate=date(2020, 3, 1),
+                present=True,
+                location="Brazil",
+                employmentType=EmploymentType.FULL_TIME,
+                locationType=LocationType.REMOTE,
+            ),
+        ],
+    ),
+)
+```
+
+```{python}
+experienceWidget(
+    ExperienceSchema(
         company="VT Creative Studio",
         positions=[
             PositionSchema(
                 title="Tech Lead",
                 startDate=date(2026, 2, 1),
                 present=True,
-                location="São Paulo, São Paulo, Brazil",
+                location="São Paulo, Brazil",
                 employmentType=EmploymentType.FREELANCE,
                 locationType=LocationType.REMOTE,
             ),
@@ -186,8 +204,8 @@ educationWidget(
     EducationSchema(
         degree="Associate Degree in Internet Systems",
         institution="Unicesumar",
-        startDate=date(2022, 7, 1),
-        endDate=date(2024, 7, 1),
+        startDate=date(2022, 1, 1),
+        endDate=date(2024, 11, 1),
     )
 )
 ```
